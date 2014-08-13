@@ -1,0 +1,1410 @@
+<div class="game" id="army" style="background-image: url('https://castleagegame1-a.akamaihd.net/graphics/ws_middle.jpg'); width: 760px; padding: 0 0px;overflow-x:hidden;">
+  <div id="globalcss" class="layout">
+          <div style="height:25px;">
+          <div id="main_bntp" width="100%" >
+            <div style="clear:both"></div>
+            <div style="text-align:right;color:#b09060;padding-top:5px;font-family:Times New Roman;font-size:10pt;overflow:hidden;">
+        <a href="help.php" onclick="ajaxLinkSend('globalContainer', 'help.php'); return false;" ><span style='color:#b09060;'>Help/FAQ</span></a> |
+        <a target="_blank" href="http://www.castleageforums.com/cforum/" style="color:#b09060" > Forum </a> |
+        <a href="http://web.castleagegame.com/castle/priv_policy.html" style="color:#b09060" > Privacy Policy </a> |
+                        <a href="army.php" onclick="ajaxLinkSend('globalContainer', 'army.php'); return false;" ><span style='color:#b09060;'>My Army (108)</span></a> |
+                <a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><span style='color:#b09060;'>My Stats</span></a>&nbsp;&nbsp;
+        |
+                            Welcome Shirley (<a onclick="javascript:document.location.href='connect_login.php?platform_action=CA_web3_logout';" href="#">Logout</a>)&nbsp;&nbsp;
+                              </div>
+            <div style="clear:both;"></div>
+          </div>
+      </div>
+          <div id="main_sts_container">
+        
+      <div style='width:760px;height:79px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_background.jpg");font-size:10px;font-weight:bold;'>
+
+        <div style="height:50px;overflow:hidden;">
+
+          <div style="float:left;width:150px;overflow:hidden;">
+
+            <div style="float:left;width:60px;height:100%">
+              <div style='padding:5px 0 0 15px;'>
+                <div style="width:40px;height:40px;cursor:pointer;"
+                   onClick="PositionAndDisplayPopupAtTop('headerPersistEnergyRefill', this, '10', '200','noclass'); return false">
+                        <div style='display:none;' id="headerPersistEnergyRefill">
+      
+                     <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_energy.jpg');background-repeat:no-repeat;">
+                    <div style='float:left; padding:21px 0 0 24px; width:190px;'>
+                      <img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_zin.jpg" />
+                    </div>
+                    <div style='float:left;'>
+                      <div style="padding:0px; color:#591700; padding-top:30px;">
+                                              <div style='float:left;'>
+                          <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_visit.gif" /></div></a>                       </div>
+                        <div style='float:left; font-weight:bold; font-size:11px; padding-left:50px;'>
+                          Need more Energy?<br/>
+                          Visit the oracle to purchase a full instant recharge!
+                        </div>
+                                            <div style='clear:both;'></div>
+                      </div>
+                      
+                      <div style='padding:0px; color:#2d4200; padding-top:19px; '>
+                        <div style='float:left;'>
+                          <a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_keep.gif" /></div></a>                        </div>
+                        <div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+                          1) Allocate skill points to Max Energy Points at your keep.
+                        </div>
+                        <div style='clear:both;'></div>
+                      </div>
+
+                      <div style='padding:0px; color:#2d4200; padding-top:5px;'>
+                                                  <div style='float:left;'>
+                            <a href="army.php?&refill=ene10" onclick="ajaxLinkSend('globalContainer', 'army.php?&refill=ene10'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_potion.gif" /></div></a>                          </div>
+                          <div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+                            2) Consume a 10 Energy Potion.
+                          </div>
+                                                <div style='clear:both;'></div>
+                      </div>
+                    </div>
+                    <div style='clear:both;'></div>
+                  </div>
+                    </div>                </div>
+              </div>
+            </div>
+            <div style="float:left;width:90px;">
+              <div style='padding:10px 0 0 0;height:15px;' title="Used for Quests. Get more from The Oracle.">
+                Energy
+                                  <div style="float:right;">
+                                  <span id="energy_time_container" style="color: #197B30;">+<span id="energy_time_value" style="font-size:9px"></span></span>
+                                </div>
+                                          </div>
+              <div style='padding:2px 0 0 0;' title="3/153">
+                <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;"  style="text-decoration:none;color: #4b3715;font-size:11px;"><strong><span id="energy_current_value">3</span>/<span style=''>153</span></strong></a>              </div>
+            </div>
+            <div style="clear:both;"></div>
+
+          </div>
+
+          <div style="float:left;width:138px;overflow:hidden;">
+
+            <div style="float:left;width:49px;height:100%">
+              <div style='padding:5px 0 0 5px;'>
+                <div style="width:40px;height:40px;cursor:pointer;"
+                  onClick="PositionAndDisplayPopupAtTop('headerPersistStaminaRefill', this, '10', '200','noclass'); return false">
+                        <div style='display:none;' id="headerPersistStaminaRefill">
+      
+                     <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_stamina.jpg');background-repeat:no-repeat;">
+                    <div style='float:left; padding:21px 0 0 24px; width:190px;'>
+                      <img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_zin.jpg" />
+                    </div>
+                    <div style='float:left;'>
+                      <div style="padding:0px; color:#591700; padding-top:30px;">
+                                              <div style='float:left;'>
+                          <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_visit.gif" /></div></a>                       </div>
+                        <div style='float:left; font-weight:bold; font-size:11px; padding-left:50px;'>
+                          Need more Stamina?<br/>
+                          Visit the oracle to purchase a full instant recharge!
+                        </div>
+                                            <div style='clear:both;'></div>
+                      </div>
+                      
+                      <div style='padding:0px; color:#2d4200; padding-top:19px; '>
+                        <div style='float:left;'>
+                          <a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_keep.gif" /></div></a>                        </div>
+                        <div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+                          1) Allocate skill points to Max Stamina Points at your keep.
+                        </div>
+                        <div style='clear:both;'></div>
+                      </div>
+
+                      <div style='padding:0px; color:#2d4200; padding-top:5px;'>
+                                                  <div style='float:left;'>
+                            <a href="generals.php" onclick="ajaxLinkSend('globalContainer', 'generals.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_heroes.gif" /></div></a>                          </div>
+                          <div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+                            2) Equip generals with stat altering abilities.
+                          </div>
+                                                <div style='clear:both;'></div>
+                      </div>
+                    </div>
+                    <div style='clear:both;'></div>
+                  </div>
+                    </div>                </div>
+              </div>
+            </div>
+            <div style="float:left;width:89px;">
+              <div style='padding:10px 0 0 0;height:15px;' title="Used for Battles.">
+                Stamina
+                                  <div style="float:right;">
+                                  <span id="stamina_time_container" style="color: #197B30;">+<span id="stamina_time_value" style="font-size:9px"></span></span>
+                                </div>
+                                          </div>
+              <div style='padding:2px 0 0 0;' title="1/141">
+                <a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;"  style="text-decoration: none; color:#4b3715;font-size:11px;"><strong><span id="stamina_current_value">1</span>/<span style=''>141</span></strong></a>              </div>
+            </div>
+            <div style="clear:both;"></div>
+
+          </div>
+
+          <div style="float:left;width:138px;overflow:hidden;">
+
+            <div style="float:left;width:49px;height:100%">
+              <div style='padding:5px 0 0 5px;'>
+                <div style="width:40px;height:40px;cursor:pointer;"
+                  onClick="PositionAndDisplayPopupAtTop('headerPersistHealthRefill', this, '10', '200','noclass'); return false">
+                        <div style='display:none;' id="headerPersistHealthRefill">
+      
+                     <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_health.jpg');background-repeat:no-repeat;">
+                    <div style='float:left; padding:21px 0 0 24px; width:190px;'>
+                      <img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_zin.jpg" />
+                    </div>
+                    <div style='float:left;'>
+                      <div style="color:#591700;padding-top:30px;">
+                        <div style='float:left;'>
+                          <form onsubmit="ajaxFormSend('globalContainer', 'army.php?', this);return false;" method="post" id="headerHealForm" >
+                                    <input type="hidden" value="heal_avatar" name="action" />
+                                    <input type="hidden" name="bqh" value="08ee9f7ef0b5f0ec9fc8db6056ac6f82" />
+                                  <input type="image" class="imgButton" alt="Heal" src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_heal.gif" value="Heal Wounds" />
+                                    <input type="hidden" name="ajax"  value="1" />
+                                  </form>
+                        </div>
+                        <div style='float:left; font-weight:bold; font-size:11px;padding-left:50px;'>
+                          Spend $23,725 gold to heal to Max Health.<br/>
+                          Health is used in PVP duel formats and monsters.
+                        </div>
+                        <div style='clear:both;'></div>
+                      </div>
+                      
+                      <div style='color:#2d4200;padding-top:40px; '>
+                        <div style='float:left;'>
+                          <a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_keep.gif" /></div></a>                        </div>
+                        <div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+                          Visit the keep to restore your Health!
+                        </div>
+                        <div style='clear:both;'></div>
+                      </div>
+
+                    </div>
+                    <div style='clear:both;'></div>
+                  </div>
+                    </div>                </div>
+              </div>
+            </div>
+            <div style="float:left;width:89px;">
+              <div style='padding:10px 0 0 0;height:15px;' title="Defend yourself in Battles.">
+                Health
+                                  <div style="float:right;">
+                                  <span id="health_time_container" style="color: #197B30;">+<span id="health_time_value" style="font-size:9px"></span></span>
+                                </div>
+                                          </div>
+              <div style='padding:2px 0 0 0;' title="27/100">
+                <a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;"  style="text-decoration: none; color:#4b3715;font-size:11px;"><strong><span id="health_current_value">27</span>/<span style=''>100</span></strong></a>              </div>
+            </div>
+            <div style="clear:both;"></div>
+
+          </div>
+
+          <div style="float:left;width:140px;overflow:hidden;">
+
+            <div style="float:left;width:52px;height:100%">
+              <div style='padding:5px 0 0 5px;'>
+                <div style="width:40px;height:40px;cursor:pointer;"
+                  onClick="PositionAndDisplayPopupAtTop('headerPersistGoldRefill', this, '10', '200','noclass'); return false">
+                        <div style='display:none;' id="headerPersistGoldRefill">
+      
+                     <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_gold.jpg');background-repeat:no-repeat;">
+                    <div style='float:left; padding:21px 0 0 24px; width:190px;'>
+                      <img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_zin.jpg" />
+                    </div>
+                    <div style='float:left;'>
+                      <div style="color:#591700; padding-top:30px;">
+                        <div style='float:left;'>
+                          <form onsubmit="ajaxFormSend('globalContainer', 'army.php?', this);return false;" method="post">
+                                <input type="image" class="imgButton" name="do" src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_bank.gif" value="Stash"/>
+                                <input type="hidden" name="bqh" value="08ee9f7ef0b5f0ec9fc8db6056ac6f82" />
+                                <input type="hidden" name="header_stash_gold" value="1" />
+                                <input type="hidden" name="ajax"  value="1" /> 
+                                  </form>
+                        </div>
+                        <div style='float:left; font-weight:bold; font-size:11px; padding-left:50px;'>
+                          Spend a 10% fee to bank 1,051,861,638 gold.<br/>
+                          Banked gold cannot be stolen by other players!
+                        </div>
+                        <div style='clear:both;'></div>
+                      </div>
+                      
+                      <div style='color:#2d4200; padding-top:40px; '>
+                        <div style='float:left;'>
+                          <a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_keep.gif" /></div></a>                        </div>
+                        <div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+                          Visit the keep to bank your gold!
+                        </div>
+                        <div style='clear:both;'></div>
+                      </div>
+
+                    </div>
+                    <div style='clear:both;'></div>
+                  </div>
+                    </div>                </div>
+              </div>
+            </div>
+            <div style="float:left;width:88px;">
+              <div style='padding:10px 0 0 0;height:15px;' title="Earn Gold through Questing, Battles, Duels and The Oracle.">
+                Gold
+                <div style="float:right;">
+                                <span style="color: #197B30;">+<span id="gold_time_value" style="font-size:9px"></span></span>
+                              </div>
+              </div>
+              <div style='padding:2px 0 0 0;' title="$1,051,861,638">
+                <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;"  style="text-decoration: none; color: #4b3715;font-size:11px;"><strong id="gold_current_value" class="gold">$1.05B</strong></a>             </div>
+            </div>
+            <div style='clear:both;'></div>
+
+          </div>
+
+          <div style="float:left;width:180px;overflow:hidden;" title="Your XP: 27126/27225&#013;You need 99 Experience Points to get to the next level.">
+            <div style='padding:11px 0 0 17px;text-align:center;height:15px;overflow:hidden;'>
+                        <div style="overflow:hidden;width:154px;height:15px;background-color:black;">
+                          <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/header_persist_xpbar.jpg');text-align:left;float:left;height:15px;width:88%;">&nbsp;</div>
+                        </div>
+
+                        <div style="position:relative;top:-15px;z-index:0;">
+                        <a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;"  style="text-decoration: none;font-size:10px;"><div style='color:#ffffff'>Level: 65</div></a>                     </div>
+                    </div>
+                    <div id="header_player_xp_totals" style='padding:2px 0 0 20px;display:none;filter:alpha(opacity=100);'>
+                      XP: <a href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;"  style="text-decoration: none; color: #4b3715;font-size:11px;"><strong>27126/27225</strong></a>                   </div>
+                    <div id="header_player_xp_needed" style='padding:2px 0 0 20px;filter:alpha(opacity=100);'>
+                      XP needed: <a href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;"  style="text-decoration: none; color: #197B30;font-size:11px;"><strong>99</strong></a>                   </div>
+          </div>
+
+          <div style="clear:both;"></div>
+        </div>
+
+        <div id="mainHeaderTabs" style="height:28px;color:#6fa5af;font-weight:normal;overflow:hidden;">
+          <div style="padding:4px 0 0 0;">
+
+            <div style="float:left;padding:0 0 0 5px;">
+              <img src="https://castleagegame1-a.akamaihd.net/graphics/header_blue_left.jpg" 
+                 style="cursor:pointer"
+                 onClick="switchTabSection('main_header_tabs_view.php', 'mainHeaderTabs', '2_army.php?');"
+                 />
+            </div>
+
+            <div style="float:left;padding:0 0 0 10px;">
+              <div style='width:163px;height:22px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_collect_container.jpg");'>
+                <div style='float:left;width:25px;'>
+                  <img style="float:left;" width="20" height="20" src="https://castleagegame1-a.akamaihd.net/graphics/demi_symbol_5.gif" />
+                </div>
+                <div style="float:left;width:65px;">
+                  <div style="padding:4px 0 0 0;">
+                    Demi:
+                  </div>
+                </div>
+                <div style="float:left;width:70px;">
+                    <div style="padding:4px 0 0 10px;font-weight:bold;">7h 10m </div>               </div>
+
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+
+            <div style="float:left;padding:0 0 0 10px;">
+              <div style='width:163px;height:22px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_collect_container_items.jpg");'>
+                <div style="float:left;width:90px;">
+                  <div style="padding:4px 0 0 23px;">
+                    Archive:
+                  </div>
+                </div>
+                <div style="float:left;width:70px;">
+                  <div style="padding:4px 0 0 0;font-weight:bold;">19hrs 0m</div>               </div>
+
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+
+            <div style="float:left;padding:0 0 0 10px;">
+              <div style='width:163px;height:22px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_collect_container_wood.jpg");'>
+                <div style="float:left;width:90px;">
+                  <div style="padding:4px 0 0 30px;">
+                    Resource:
+                  </div>
+                </div>
+                <div style="float:left;width:70px;">
+                  <div style="padding:4px 0 0 10px;font-weight:bold;">11h 22m </div>                </div>
+
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+
+            <div style="float:left;padding:0 0 0 10px;">
+              <div style='width:163px;height:22px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_collect_container_crystal.jpg");'>
+                <div style="float:left;width:90px;">
+                  <div style="padding:4px 0 0 30px;">
+                    Crystal:
+                  </div>
+                </div>
+                <div style="float:left;width:70px;">
+                  <div style="padding:4px 0 0 10px;font-weight:bold;">11h 22m </div>                </div>
+
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+
+            <div style="float:left;padding:0 0 0 10px;">
+              <img src="https://castleagegame1-a.akamaihd.net/graphics/header_blue_right.jpg"
+                 style="cursor:pointer"
+                 onClick="switchTabSection('main_header_tabs_view.php', 'mainHeaderTabs', '4_army.php?');"
+                 />
+            </div>
+
+            <div style="clear:both;"></div>
+
+          </div>
+        </div>
+        
+      </div>
+
+      <input type="hidden" id="gold_time_sec" value="-2515085" />
+        <input type="hidden" id="gold_current_value_amount" value="1051861638" />
+        <input type="hidden" id="gold_current_recharge_time" value="3600" />
+        <input type="hidden" id="gold_current_increment" value="95294400" />
+        
+                    <input type="hidden" id="stamina_time_sec" value="142" />
+            <input type="hidden" id="stamina_current_value_amount" value="1" />
+            <input type="hidden" id="stamina_current_max" value="141" />
+            <input type="hidden" id="stamina_current_recharge_time" value="300" />
+                
+                    <input type="hidden" id="energy_time_sec" value="150" />
+            <input type="hidden" id="energy_current_value_amount" value="3" />
+            <input type="hidden" id="energy_current_max" value="153" />
+            <input type="hidden" id="energy_current_recharge_time" value="300" />
+                
+                    <input type="hidden" id="health_time_sec" value="1" />
+            <input type="hidden" id="health_current_value_amount" value="27" />
+            <input type="hidden" id="health_current_max" value="100" />
+            <input type="hidden" id="health_current_recharge_time" value="180" />
+              </div>
+
+    <div id="app_body_container">
+
+      <div id="main_bn_container">
+                    <div id="main_bn" valign="top" class=''>
+              <div style='float:left; padding:4px 0 0 4px; text-align:left;'>
+                                
+            <div style='width:161px;height:4px;'></div>
+                                                <div id="persistHomeFPPlateClosed" title="Favor Points" style='display:none;cursor:pointer;width:76px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_fp_closed_plate.gif");'>
+                <div style="float:left;width:50px;height:100%;" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;">
+                </div>
+                <div style="float:left;width:26px;height:100%;" 
+                   onclick="$('#persistHomeFPPlateClosed').hide();
+                        $('#persistHomeFPPlateOpen').show();
+                        quick_ajax('index.php?headerFavorPlate=1');
+                        ">
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+
+              <div id="persistHomeFPPlateOpen" title="Favor Points" style='display:block;cursor:pointer;width:140px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_fp_open_plate.gif");'>
+                <div style="float:left;width:50px;height:100%;" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;">
+                </div>
+                <div style="float:left;width:90px;height:100%;overflow:hidden;" 
+                   onclick="$('#persistHomeFPPlateClosed').show();
+                        $('#persistHomeFPPlateOpen').hide();
+                        quick_ajax('index.php?headerFavorPlate=0');">
+                  <div style='padding:3px 0 0 10px;color:white;text-align:center;font-weight:bold;font-size:11px;'>
+                    <span style="font-size:9px;">Favor:</span><br/>
+                    6                 </div>
+                </div>
+                <div style="clear:both;"></div>
+              </div>
+
+              <div style='width:161px;height:4px;'></div>
+                              <div id="persistHomeConquestPlateClosed" title="Conquest Tokens" style='display:block;cursor:pointer;width:76px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_conquest_closed_plate.gif");'>
+                  <div style="float:left;width:50px;height:100%;" onclick="ajaxLinkSend('globalContainer', 'guildv2_conquest_command.php'); return false;">
+                  </div>
+                  <div style="float:left;width:26px;height:100%;" 
+                     onclick="$('#persistHomeConquestPlateClosed').hide();
+                          $('#persistHomeConquestPlateOpen').show();
+                          quick_ajax('index.php?headerConquestTokenPlate=1');
+                          ">
+                  </div>
+                  <div style="clear:both;"></div>
+                </div>
+
+                <div id="persistHomeConquestPlateOpen" title="Conquest Tokens" style='display:none;cursor:pointer;width:140px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_conquest_open_plate.gif");'>
+                  <div style="float:left;width:50px;height:100%;" onclick="ajaxLinkSend('globalContainer', 'guildv2_conquest_command.php'); return false;">
+                  </div>
+                  <div style="float:left;width:90px;height:100%;overflow:hidden;" 
+                     onclick="$('#persistHomeConquestPlateClosed').show();
+                         $('#persistHomeConquestPlateOpen').hide();
+                         quick_ajax('index.php?headerConquestTokenPlate=0');
+                         ">
+                    <div style='padding:3px 0 0 10px;color:white;text-align:center;font-weight:bold;font-size:11px;'>
+                      <span style="font-size:9px;">Tokens:</span><br/>
+                      10                    </div>
+                  </div>
+                  <div style="clear:both;"></div>
+                </div>
+              
+              
+                    </div>
+        
+      </div>
+      </div>
+
+                <div style='float:left;height:1px;width:1px;'>
+          <input type="text" id="main_anchor" style="width:1px; height:1px; background-color:white; border:0; margin:0; padding:0; float:left;" />
+        </div>
+        
+
+        <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/mainnav_holderbar.jpg');width:760px;height:44px;">
+            <div id="gchat_anchor"></div>
+    <div id='collapsedGuildChat'
+       onclick='$("#expandedGuildChat").toggle();$("#chatGuildChatTextInput").focus();scrollToBottom("#chatGuildChat");' 
+       style="background-image: url('https://castleagegame1-a.akamaihd.net/graphics/mainnav_top_chat.gif'); width:51px; height:30px;position:absolute; font-family: Verdana; cursor:pointer;z-index:1; margin: 5px 0 0 5px;">
+      <div class='chatNotificationCount' style='text-align:center; font-weight:bold;padding: 3px 16px 0 9px;'></div>
+    </div>
+
+    <div class="mainChatView" id='wallAndChatSection' style="background-image: url('https://castleagegame1-a.akamaihd.net/graphics/chat_bubble_bg.gif'); width:365px; height:306px;position:absolute; z-index:100; font-family: Verdana; text-align:left; display:none; margin: 5px 0 0 5px;font-weight:bold;">
+      
+    <div class='chatNotificationCount'
+         style='text-align:center; font-weight:bold;padding:3px 16px 0 9px; width:26px; height:25px; cursor:pointer;' 
+         onclick='$(".mainChatView").hide();'>
+    </div>
+    <div id='wallChatHeader' style='padding-top:0px; height:35px; padding-bottom:2px;'>
+        <div style='float:left; width:130px;'>
+            <div style='color:white; font-weight:bold; font-size:11px;padding:12px 0 0 20px;'>
+                Wall 
+            </div>
+        </div>
+
+        <div style='padding:7px 0 0 140px;'>
+            <div style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_wall_on.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;text-align:center;' 
+                 onMouseOut="hideItemPopup('wall_chat_hover_info',event);return false;"
+                 onMouseOver="showItemPopup('wall_chat_hover_info', this, 43, 10);return false;"
+                >
+                <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+                    <div style='width:20px;text-align:center;'>
+                        0                    </div>
+                </div>
+            </div>
+
+            <div style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_chat_off.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;cursor:pointer;text-align:center;' 
+                 onClick="ajaxLinkSend('wallAndChatSection', 'wall_chat_log_view.php?mainChatTab=2');"
+                 onMouseOut="hideItemPopup('player_chat_hover_info',event);return false;"
+                 onMouseOver="showItemPopup('player_chat_hover_info', this, 43, 10);return false;"
+                >
+                <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+                    <div style='width:20px;text-align:center;'>
+                        0                    </div>
+                </div>
+            </div>
+
+            <div class="guildChatTab"
+                 style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_guild_off.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;cursor:pointer;text-align:center;' 
+                 onMouseOut="hideItemPopup('guild_chat_hover_info',event);return false;"
+                 onMouseOver="showItemPopup('guild_chat_hover_info', this, 43, 10);return false;"
+                >
+                <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+                    <div class="chatNotificationCount" style='width:20px;text-align:center;'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style='clear:both;'></div>
+    </div>
+
+    <div class='mainChatContent' style='text-align:left; color:white;padding: 0px 10px;font-size:12px;overflow-y:auto;height:210px;width:340px;'>
+        <div style="padding:3px 0 10px 10px;">Make a wall post!</div>    </div>
+    <div style="clear:both"></div>
+
+    <div style="width:280px; margin:5px 0 0 10px;">
+        <form action="/" id="mainChatWallPostForm">
+            <input id="mainChatWallTextInput" 
+                   type="text"
+                   name="main_chat_wall_post"
+                   style="width:345px;height:18px;background-color:black;color:white;border:none;"/>
+        </form>
+    </div>
+    <div style="clear:both"></div>
+
+    <script>
+        $("#mainChatWallTextInput").focus();
+
+        // only needed for textarea tag
+        // $("#mainChatWallPostForm").keypress(function(event) {
+        //     if (event.which == 13) {
+        //         $("#mainChatWallPostForm").submit();
+        //     }
+        // });
+
+        // Attach a submit handler to the form
+        $( "#mainChatWallPostForm" ).submit(function( event )
+        {
+            // Stop form from submitting normally
+            event.preventDefault();
+            ajaxFormSend('wallAndChatSection', 'wall_chat_log_view.php', $(this));
+        });
+    </script>
+
+<script>
+  scrollToBottom('.mainChatContent');
+
+  function guildChatTabHandler()
+  {
+      $('#wallAndChatSection').toggle();
+      $('#expandedGuildChat').toggle();
+      scrollToBottom('#chatGuildChat');
+      $('#chatGuildChatTextInput').focus();
+  }
+  // attach
+  $(".guildChatTab").on("click", guildChatTabHandler);
+
+  function playerChatBarHandler(event)
+  {
+      var chat_id = event.data.chat_id;
+
+      if($('#private_chat_content_'+chat_id).is(':visible')) {
+        $('.privateChatBar').show();
+      } else {
+        $('.privateChatBar').hide();
+        $('#chat_post_'+chat_id).toggle();
+      }
+      $('#private_chat_content_'+chat_id).toggle();
+      $('#private_chat_form_'+chat_id).toggle();
+      $('#private_chat_text_input_'+chat_id).focus();
+      scrollToBottom('#private_chat_content_'+chat_id);
+  }
+</script>
+    </div>
+
+    <div class="mainChatView" id='expandedGuildChat' style="background-image: url('https://castleagegame1-a.akamaihd.net/graphics/chat_bubble_bg.gif'); width:365px; height:306px;position:absolute; z-index:100; font-family: Verdana; text-align:left; display:none; margin: 5px 0 0 5px;">
+      <div class='chatNotificationCount' style='text-align:center; font-weight:bold;padding:3px 16px 0 9px; width:26px; height:25px; cursor:pointer;' onclick='$(".mainChatView").hide();'>
+
+      </div>
+      <div id='chatHeader' style='padding-top:0px; height:35px; padding-bottom:2px;font-weight:bold;'>
+        <div style='float:left; width:130px;'>
+                      <div style='float:left;padding: 8px 0 0 10px;'>
+              <img style='height:25px; width:25px;' src="https://castleagegame1-a.akamaihd.net/graphics/guild_symbol_160_10.gif"/>
+            </div>
+            <div style='float:left;color:white; font-weight:bold; font-size:11px;padding:10px 0 0 5px;'>
+              Guild Chat <span id='guildChatActiveMembers'></span>
+            </div>
+                    <div style='clear:both;'></div>
+        </div>
+
+        <div style='padding:7px 0 0 140px;'>
+                <div id="main_wall_icon_tab"
+                   style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_wall_off.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;text-align:center;cursor:pointer;' 
+                     onMouseOut="hideItemPopup('wall_chat_hover_info',event);return false;"
+                     onMouseOver="showItemPopup('wall_chat_hover_info', this, 43, 10);return false;"
+                    >
+                    <script>
+                      $( "#main_wall_icon_tab" ).click(function() {
+                        var posting = caPost('wall_chat_log_view.php', {});
+                        posting.done(function( data ) {
+                          $('#wallAndChatSection').html( data );
+                          $('#expandedGuildChat').toggle();
+                          $('#wallAndChatSection').toggle();
+                        });
+                      });
+                    </script>
+                    <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+                        <div style='width:20px;text-align:center;'>
+                            0                       </div>
+                    </div>
+                </div>
+
+                <div id="main_chat_icon_tab" 
+                   style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_chat_off.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;cursor:pointer;text-align:center;' 
+                     onMouseOut="hideItemPopup('player_chat_hover_info',event);return false;"
+                     onMouseOver="showItemPopup('player_chat_hover_info', this, 43, 10);return false;"
+                    >
+                    <script>
+                      $( "#main_chat_icon_tab" ).click(function() {
+                        var posting = caPost('wall_chat_log_view.php', {mainChatTab:'2'});
+                        posting.done(function( data ) {
+                          $('#wallAndChatSection').html( data );
+                          $('#expandedGuildChat').toggle();
+                          $('#wallAndChatSection').toggle();
+                        });
+                      });
+                    </script>
+                    <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+                        <div style='width:20px;text-align:center;'>
+                            0                       </div>
+                    </div>
+                </div>
+
+                <div style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_guild_on.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;text-align:center;' 
+                     onMouseOut="hideItemPopup('player_chat_hover_info',event);return false;"
+                     onMouseOver="showItemPopup('player_chat_hover_info', this, 43, 10);return false;"
+                    >
+                    <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+                        <div class="chatNotificationCount" style='width:20px;text-align:center;'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div style='clear:both;'></div>
+      </div>
+
+      <div id='chatGuildChat' style='text-align:left; color:white;padding: 0px 10px; font-size:12px; overflow-y:auto;height:200px;width:340px;'>
+        <div id='chatGuildChatContainer'>
+          
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Skylines</span> (1wk): Noooo! ;( you will be missed. Be sure to keep in touch 😜                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Charlie </span> (1wk): I'll do my best:)               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (1wk): I don't think ur takin up space Charlie and I definitely vote u back in as soon as ur ready. Best of luck with ur situation and hope to c u back soon!                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Skylines</span> (1wk): Definitely agree with beavis!               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Charlie </span> (1wk): Thanks guys. Hopefully I won't be done for long.                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Shortersword</span> (1wk): Take care of yourselve(s) Charlie. Y'all come back now, ya hear!?               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (1wk): I tried on the timer for 20 mins. Set for late battle since I finally got in 5 min late. Phone service is beginning to tread my final nerve.                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (6d): Need a little more help w the big cleric in T1.                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (6d): Good run everybody! Was thinking we'd start the FB battle in about an hr or so to kick off Taco Red Pants Tuesday!               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (6d): Gonna hop over and start FB battle now               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Athena</span> (6d): Are there festival battles in CA iOS?                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Brianna</span> (6d): Nice order Sky ;) so stay and play it is? I'll try my best but I think I will be inactive for the rest of the summer or just spend my points on monsters...               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Brianna</span> (6d): My new hobby is an old one: taking pictures and learn to be a photographer :) I'm getting better at it and reached that moment where people start asking for photos and are paying money :) so that's nice but I have to be a lot outside and spend a lot of time with Lightroom and Photoshop.               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (5d): I was thinking of getting another FB battle in today after our next normal battle. Any opinions?               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Skylines</span> (5d): I'm all in beavis                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Skylines</span> (5d): Fb started               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (5d): Bri is here!               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Brianna</span> (5d): lol, good morning Beavis, have to get to work now, cu ;)                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (5d): Well have a good one. C u again soon we hope!                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>RR. </span> (5d): T3 and t4                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Mr. Noodlearms</span> (3d): Hello all. I'm new to the guild.               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Brianna</span> (3d): Hi Noodlearms, I hope you like it here :)               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>😄</span> (3d): Welcome please add 2EDF62               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Mr. Noodlearms</span> (3d): Thank you. My codes are 408FFB and F2FF8A.                 </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Sundro</span> (3d): Please add 3b4545 thanks               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>RR. </span> (3d): T3               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Skylines</span> (3d): Guys, do the Cronus LoM. The two genisis is just pure crazy. No need to waste our time ;p                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (3d): Howdy Noodlearms. Didn't we c u on the other side of the guild battle this mornin? Another Furion convert.                 </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Mr. Noodlearms</span> (3d): Indeed you did. I was looking for a more active guild with people around my level. You guys seemed like the perfect fit for me.                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>RR. </span> (3d): Please everybody siege Cronus and genesis in conquest. As Sky told don't attack the first land (with 2 genesis)                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (3d): Hope u like it here. When team Joshua returns that kick it up another notch... Very excitable, especially for Taco Red Pants Tuesday, u'll c that next week. Good to have u aboard!                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (3d): I'll hop on that right after the battle RR. I burned up my points already.                 </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Brianna</span> (3d): Hi Guildies, I'm going on holiday for three weeks and won't be able to play               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Brianna</span> (3d): Skyline will play Bri while I'm a way, so if Bri is behaving strange -> that's Sky ;)               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (3d): What? Everybody runnin off for weeks at a time as if anything were worth missing hangin out w us. That said I may miss tomorrow nights battle I'm might b busy at the Cooper/ Crüe show.                 </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>RR. </span> (3d): Ha ha, behaving strange.               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Shortersword</span> (3d): Welcome aboard Noodlarms!                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>RR. </span> (2d): T4 first               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>RR. </span> (2d): Nevermind                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Skylines</span> (2d): Sorry rr, didn't see your message. I'm just going after actives that output damage               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Skylines</span> (2d): Guildies! I'm running as a Mage in today's battles ;)                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Skylines</span> (2d): T2               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Beavis</span> (17h): I thought we might start the Taco Red Pants Tuesday battle after the afternoon battle 7 CST like last week. Any opinions?               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Maverick</span> (17h): Ok                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Skylines</span> (16h): That's fine. I kicked a couple high lvl inactives. Hopefully LoM monsters will get easier               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Skylines</span> (16h): Victor, relentless and sir slayer               </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>RR. </span> (7h): Please siege the LoM monster.                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Juliette</span> (1h): I hear there are going to be 10 character battles                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>Juliette</span> (1h): Beavis, Ithelion, RR, Skylines, Joshua, JJ, Juliette, ... I see a great team!                </div>
+              
+                <div style="padding-top:3px;" >
+                  <span style='color:#ffc100;'>VegasBomb</span> (1h): Sky,  if u want u can kick Mike and Van too  haven't had time to play them in a while  all I've done past few weeks with them is get on demi double day to pray               </div>
+                      </div>
+      </div>
+      <div id='chatGuildChatTextBox' style='padding:0px;'>
+                  <div style='padding:0px;'>
+            <div style="float:left; width:280px; margin:15px 0 0 10px;">
+              <input onkeypress="guildChatHandleKeyPress(event)" id="chatGuildChatTextInput" type="text" style="width:345px;height:18px;background-color:black;color:white;border:none;" />
+            </div>
+            <div style="clear:both"></div>
+          </div>
+              </div>
+    </div>
+      <div style="padding-left:65px;">
+              <div style="float:left;">
+          
+                  <div class="mainMenu" style="padding-top:5px;">
+  <ul>
+      <li
+         onMouseOut="hideList('mainMenu_home');return false;" 
+         onMouseOver="showList('mainMenu_home');return false;"
+    ><a id='main_menu_home' href="index.php" onclick="ajaxLinkSend('globalContainer', 'index.php'); return false;" ></a>
+            <ul id='mainMenu_home' style="display:none">
+                  
+                    <li>
+            <a href="index.php" onclick="ajaxLinkSend('globalContainer', 'index.php'); return false;" style='color:#00fafd'>
+              Main            </a>
+          </li>
+                            
+                    <li>
+            <a href="army_news_feed.php" onclick="ajaxLinkSend('globalContainer', 'army_news_feed.php'); return false;" style='color:#00fafd'>
+              News Feeds            </a>
+          </li>
+                            
+                    <li>
+            <a href="crusaders.php" onclick="ajaxLinkSend('globalContainer', 'crusaders.php'); return false;" style='color:#00fafd'>
+              Crusaders           </a>
+          </li>
+                            
+                    <li>
+            <a href="daily_bonus_list.php" onclick="ajaxLinkSend('globalContainer', 'daily_bonus_list.php'); return false;" style='color:#00fafd'>
+              Daily Bonus           </a>
+          </li>
+                          <div class='bottom'>&nbsp;</div>
+      </ul>
+          </li>
+      <li
+         onMouseOut="hideList('mainMenu_quest');return false;" 
+         onMouseOver="showList('mainMenu_quest');return false;"
+    ><a id='main_menu_quest' href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;" ></a>
+            <ul id='mainMenu_quest' style="display:none">
+                  
+                    <li>
+            <a href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;" style='color:#00fafd'>
+              Quest           </a>
+          </li>
+                            
+                    <li>
+            <a href="symbolquests.php" onclick="ajaxLinkSend('globalContainer', 'symbolquests.php'); return false;" style='color:#00fafd'>
+              Demi Quest            </a>
+          </li>
+                            
+                    <li>
+            <a href="monster_quests.php" onclick="ajaxLinkSend('globalContainer', 'monster_quests.php'); return false;" style='color:#00fafd'>
+              Atlantis            </a>
+          </li>
+                            
+                    <li>
+            <a href="festival_home.php" onclick="ajaxLinkSend('globalContainer', 'festival_home.php'); return false;" style='color:#00fafd'>
+              Festival            </a>
+          </li>
+                          <div class='bottom'>&nbsp;</div>
+      </ul>
+          </li>
+      <li
+         onMouseOut="hideList('mainMenu_battle');return false;" 
+         onMouseOver="showList('mainMenu_battle');return false;"
+    ><a id='main_menu_battle' href="battle.php" onclick="ajaxLinkSend('globalContainer', 'battle.php'); return false;" ></a>
+            <ul id='mainMenu_battle' style="display:none">
+                  
+                    <li>
+            <a href="battle.php" onclick="ajaxLinkSend('globalContainer', 'battle.php'); return false;" style='color:#00fafd'>
+              Battle            </a>
+          </li>
+                            
+                    <li>
+            <a href="arena.php" onclick="ajaxLinkSend('globalContainer', 'arena.php'); return false;" style='color:#00fafd'>
+              Arena VIII            </a>
+          </li>
+                            
+                    <li>
+            <a href="festival_duel_home.php" onclick="ajaxLinkSend('globalContainer', 'festival_duel_home.php'); return false;" style='color:#00fafd'>
+              Duel Champion           </a>
+          </li>
+                            
+                    <li>
+            <a href="battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" style='color:#00fafd'>
+              Battle Rank           </a>
+          </li>
+                            
+                    <li>
+            <a href="war_rank.php" onclick="ajaxLinkSend('globalContainer', 'war_rank.php'); return false;" style='color:#00fafd'>
+              War Rank            </a>
+          </li>
+                            
+                    <li>
+            <a href="conquest_battlerank.php" onclick="ajaxLinkSend('globalContainer', 'conquest_battlerank.php'); return false;" style='color:#00fafd'>
+              Conquest Rank           </a>
+          </li>
+                          <div class='bottom'>&nbsp;</div>
+      </ul>
+          </li>
+      <li
+         onMouseOut="hideList('mainMenu_monster');return false;" 
+         onMouseOver="showList('mainMenu_monster');return false;"
+    ><a id='main_menu_monster' href="player_monster_list.php" onclick="ajaxLinkSend('globalContainer', 'player_monster_list.php'); return false;" ></a>
+            <ul id='mainMenu_monster' style="display:none">
+                  
+                    <li>
+            <a href="player_monster_list.php" onclick="ajaxLinkSend('globalContainer', 'player_monster_list.php'); return false;" style='color:#00fafd'>
+              Monster List            </a>
+          </li>
+                            
+                    <li>
+            <a href="public_monster_list.php?monster_tier=3" onclick="ajaxLinkSend('globalContainer', 'public_monster_list.php?monster_tier=3'); return false;" style='color:#00fafd'>
+              Public List           </a>
+          </li>
+                            
+                    <li>
+            <a href="monster_summon_list.php" onclick="ajaxLinkSend('globalContainer', 'monster_summon_list.php'); return false;" style='color:#00fafd'>
+              Summon            </a>
+          </li>
+                            
+                    <li>
+            <a href="army_news_feed.php" onclick="ajaxLinkSend('globalContainer', 'army_news_feed.php'); return false;" style='color:#00fafd'>
+              Live Feed           </a>
+          </li>
+                            
+                    <li>
+            <a href="festival_tower.php" onclick="ajaxLinkSend('globalContainer', 'festival_tower.php'); return false;" style='color:#00fafd'>
+              Tower I           </a>
+          </li>
+                            
+                    <li>
+            <a href="festival_tower2.php" onclick="ajaxLinkSend('globalContainer', 'festival_tower2.php'); return false;" style='color:#00fafd'>
+              Tower II            </a>
+          </li>
+                            
+                    <li>
+            <a href="guildv2_current_monster_battles.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_current_monster_battles.php'); return false;" style='color:#00fafd'>
+              Guild Monster           </a>
+          </li>
+                          <div class='bottom'>&nbsp;</div>
+      </ul>
+          </li>
+      <li
+         onMouseOut="hideList('mainMenu_heroes');return false;" 
+         onMouseOver="showList('mainMenu_heroes');return false;"
+    ><a id='main_menu_heroes' href="generals.php" onclick="ajaxLinkSend('globalContainer', 'generals.php'); return false;" ></a>
+            <ul id='mainMenu_heroes' style="display:none">
+                  
+                    <li>
+            <a href="mercenary.php" onclick="ajaxLinkSend('globalContainer', 'mercenary.php'); return false;" style='color:#00fafd'>
+              Heroes            </a>
+          </li>
+                            
+                    <li>
+            <a href="generals.php" onclick="ajaxLinkSend('globalContainer', 'generals.php'); return false;" style='color:#00fafd'>
+              Generals            </a>
+          </li>
+                            
+                    <li>
+            <a href="general_alliance.php" onclick="ajaxLinkSend('globalContainer', 'general_alliance.php'); return false;" style='color:#00fafd'>
+              General Alliance            </a>
+          </li>
+                          <div class='bottom'>&nbsp;</div>
+      </ul>
+          </li>
+      <li
+         onMouseOut="hideList('mainMenu_town');return false;" 
+         onMouseOver="showList('mainMenu_town');return false;"
+    ><a id='main_menu_town' href="soldiers.php" onclick="ajaxLinkSend('globalContainer', 'soldiers.php'); return false;" ></a>
+            <ul id='mainMenu_town' style="display:none">
+                  
+                    <li>
+            <a href="territory.php" onclick="ajaxLinkSend('globalContainer', 'territory.php'); return false;" style='color:#00fafd'>
+              Territory           </a>
+          </li>
+                            
+                    <li>
+            <a href="soldiers.php" onclick="ajaxLinkSend('globalContainer', 'soldiers.php'); return false;" style='color:#00fafd'>
+              Soldiers            </a>
+          </li>
+                            
+                    <li>
+            <a href="item.php" onclick="ajaxLinkSend('globalContainer', 'item.php'); return false;" style='color:#00fafd'>
+              Black Smith           </a>
+          </li>
+                            
+                    <li>
+            <a href="magic.php" onclick="ajaxLinkSend('globalContainer', 'magic.php'); return false;" style='color:#00fafd'>
+              Magic           </a>
+          </li>
+                            
+                    <li>
+            <a href="conquest_path_shop.php" onclick="ajaxLinkSend('globalContainer', 'conquest_path_shop.php'); return false;" style='color:#00fafd'>
+              Emporium            </a>
+          </li>
+                          <div class='bottom'>&nbsp;</div>
+      </ul>
+          </li>
+      <li
+         onMouseOut="hideList('mainMenu_oracle');return false;" 
+         onMouseOver="showList('mainMenu_oracle');return false;"
+    ><a id='main_menu_oracle' href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ></a>
+            <ul id='mainMenu_oracle' style="display:none">
+                  
+                    <li>
+            <a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" style='color:#00fafd'>
+              Oracle            </a>
+          </li>
+                            
+                    <li>
+            <a href="monthly_generals.php" onclick="ajaxLinkSend('globalContainer', 'monthly_generals.php'); return false;" style='color:#00fafd'>
+              Favor Generals            </a>
+          </li>
+                            
+                    <li>
+            <a href="reinforcements.php" onclick="ajaxLinkSend('globalContainer', 'reinforcements.php'); return false;" style='color:#00fafd'>
+              Reinforcements            </a>
+          </li>
+                            
+                    <li>
+            <a href="symbols.php" onclick="ajaxLinkSend('globalContainer', 'symbols.php'); return false;" style='color:#00fafd'>
+              Demi-Power            </a>
+          </li>
+                            
+                    <li>
+            <a href="treasure_chest.php" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php'); return false;" style='color:#00fafd'>
+              Chest           </a>
+          </li>
+                          <div class='bottom'>&nbsp;</div>
+      </ul>
+          </li>
+      <li
+         onMouseOut="hideList('mainMenu_keep');return false;" 
+         onMouseOver="showList('mainMenu_keep');return false;"
+    ><a id='main_menu_keep' href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ></a>
+            <ul id='mainMenu_keep' style="display:none">
+                  
+                    <li>
+            <a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" style='color:#00fafd'>
+              Stats           </a>
+          </li>
+                            
+                    <li>
+            <a href="guild_class_power_equipment.php" onclick="ajaxLinkSend('globalContainer', 'guild_class_power_equipment.php'); return false;" style='color:#00fafd'>
+              Class           </a>
+          </li>
+                            
+                    <li>
+            <a href="item_archive_bonus.php" onclick="ajaxLinkSend('globalContainer', 'item_archive_bonus.php'); return false;" style='color:#00fafd'>
+              Item Archives           </a>
+          </li>
+                            
+                    <li>
+            <a href="item_equip.php" onclick="ajaxLinkSend('globalContainer', 'item_equip.php'); return false;" style='color:#00fafd'>
+              Equipment           </a>
+          </li>
+                            
+                    <li>
+            <a href="alchemy.php" onclick="ajaxLinkSend('globalContainer', 'alchemy.php'); return false;" style='color:#00fafd'>
+              Alchemy           </a>
+          </li>
+                            
+                    <li>
+            <a href="goblin_emp.php" onclick="ajaxLinkSend('globalContainer', 'goblin_emp.php'); return false;" style='color:#00fafd'>
+              Kobo            </a>
+          </li>
+                            
+                    <li>
+            <a href="forge_item_power.php" onclick="ajaxLinkSend('globalContainer', 'forge_item_power.php'); return false;" style='color:#00fafd'>
+              Forge           </a>
+          </li>
+                            
+                    <li>
+            <a href="achievements.php" onclick="ajaxLinkSend('globalContainer', 'achievements.php'); return false;" style='color:#00fafd'>
+              Achievements            </a>
+          </li>
+                            
+                    <li>
+            <a href="gift.php" onclick="ajaxLinkSend('globalContainer', 'gift.php'); return false;" style='color:#00fafd'>
+              Gift            </a>
+          </li>
+                            
+                    <li>
+            <a href="army.php" onclick="ajaxLinkSend('globalContainer', 'army.php'); return false;" style='color:#00fafd'>
+              Army            </a>
+          </li>
+                          <div class='bottom'>&nbsp;</div>
+      </ul>
+          </li>
+      <li
+         onMouseOut="hideList('mainMenu_guild');return false;" 
+         onMouseOver="showList('mainMenu_guild');return false;"
+    ><a id='main_menu_guild' href="guildv2_home.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_home.php'); return false;" ></a>
+            <ul id='mainMenu_guild' style="display:none">
+                  
+                    <li>
+            <a href="guildv2_home.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_home.php'); return false;" style='color:#00fafd'>
+              Home            </a>
+          </li>
+                            
+                    <li>
+            <a href="guildv2_panel.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_panel.php'); return false;" style='color:#00fafd'>
+              Manage            </a>
+          </li>
+                            
+                    <li>
+            <a href="guildv2_list.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_list.php'); return false;" style='color:#00fafd'>
+              Guild List            </a>
+          </li>
+                            
+                    <li>
+            <a href="guildv2_battle.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_battle.php'); return false;" style='color:#00fafd'>
+              Guild Battle            </a>
+          </li>
+                            
+                    <li>
+            <a href="guildv2_monster_summon_list.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_monster_summon_list.php'); return false;" style='color:#00fafd'>
+              Guild Monster           </a>
+          </li>
+                            
+                    <li>
+            <a href="guild_priority_mlist.php" onclick="ajaxLinkSend('globalContainer', 'guild_priority_mlist.php'); return false;" style='color:#00fafd'>
+              Priority Monster            </a>
+          </li>
+                            
+                    <li>
+            <a href="festival_battle_home.php" onclick="ajaxLinkSend('globalContainer', 'festival_battle_home.php'); return false;" style='color:#00fafd'>
+              Festival Battle           </a>
+          </li>
+                            
+                    <li>
+            <a href="guild_achievements.php" onclick="ajaxLinkSend('globalContainer', 'guild_achievements.php'); return false;" style='color:#00fafd'>
+              Achievements            </a>
+          </li>
+                          <div class='bottom'>&nbsp;</div>
+      </ul>
+          </li>
+    </ul>
+</div>              </div>
+            </div>
+        </div>
+
+  <div id="app_body">
+    <table class="layout" cellspacing="0" cellpadding="0"><tr><td>
+  <div id="results_container" class="results_container" style="display:none"> </div>
+  <div id="results_main_wrapper">
+          </div>
+    <div style='display:none;' id="web3_coming_soon">
+        <div style="padding:390px 0 0 125px;">
+        <div style="float:left;width:500px;height:390px;">
+          <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/helpmenu_top.jpg');width:500px;height:60px;">
+              <div style="padding:15px 0 0 36px;">
+                  <div style="float:left;width:395px;height:25px;text-align:center;overflow:hidden;">
+                      <div style="clear:both"></div>
+                      <div style="color:white;font-size:18px;">COMING SOON</div>
+                      <div style="clear:both"></div>
+                  </div>
+                  <div style="padding:3px 15px 0 0">
+                      <div style="float:right">
+                              <div style='text-align:right;'>
+          <a href="#" onclick="hidePositionBox(); return false;">   
+              <img  src="https://castleagegame1-a.akamaihd.net/graphics/xbtn.png" />
+          </a>
+        </div>
+                              </div>
+                    </div>
+                </div>
+          </div>
+      
+          <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/helpmenu_middle.jpg');width:500px;height:300px;">
+              <div style="padding:0 0 0 15px;">
+                        <div style="float:left;width:470px;height:300px;text-align:left;overflow-y:auto;">
+                            <div style="clear:both"></div>
+                            <div style="color:black;font-size:16px;font-family:Times New Roman;"><div style="padding:10px;">This feature is coming soon!</div></div>
+                      <div style="clear:both"></div>
+                  </div>
+              </div>
+          </div>
+            
+                <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/helpmenu_bottom.jpg');width:500px;height:30px;overflow:hidden;" ></div>
+        </div>
+      </div>
+    </div>
+<div style="text-align:left;width:740px;">
+
+
+    
+    <div style="width:740px;">
+      <div style="clear:both"></div>      
+                        <div style="float:left;padding: 0 5px 0 0px">
+            <a href="gift.php" onclick="ajaxLinkSend('globalContainer', 'gift.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/tab_gifts_off.gif" /></a>         </div>
+            
+        <div style="float:left;padding: 0 5px 0 0px">
+          <a href="army.php" onclick="ajaxLinkSend('globalContainer', 'army.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/invite_on.gif" /></a>       </div>        
+            <div style="float:left;padding: 0 5px 0 0px">
+        <a href="army_member.php" onclick="ajaxLinkSend('globalContainer', 'army_member.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/view_army_off.gif" /></a>     </div>
+      <div style="float:left;padding: 0 5px 0 0px">
+        <a href="army_reqs.php" onclick="ajaxLinkSend('globalContainer', 'army_reqs.php'); return false;" ><img class="imgButton" src="https://castleagegame1-a.akamaihd.net/graphics/sent_invites_off.gif" /></a>      </div>
+      <div style="clear:both"></div>
+    </div>
+    
+    <div>
+            <div style="width:740px; height:243px; background-image: url(https://castleagegame1-a.akamaihd.net/graphics/invite_page_progress_12.jpg);padding:7px 0 0 0;">
+              <div style="clear:both"></div>
+          <div style="float:right;text-align:right;width:150px;padding: 8px 25px 10px 0;color:#8dc63f;font-family:Verdana;font-size:14px;font-weight:bold;">
+            Your Army Size: 108         </div>
+        <div style="clear:both"></div>
+      </div>
+    </div>
+
+        <div style="width:740px; height:41px; background-image: url(https://castleagegame1-a.akamaihd.net/graphics/invite_page_02.jpg);padding:7px 0 0 0;"></div>
+
+    <div style="width:740px; background-image: url(https://castleagegame1-a.akamaihd.net/graphics/invite_page_03.jpg);padding:5px 0 0 0;">
+
+      <div style="text-align:center;width:600px;padding: 10px 25px 10px 65px;color:#F0F8FF;font-family:Verdana; font-size:20px;font-weight:bold;">
+        You have <b>20</b> available army invites left!
+                Click below to invite Facebook friends to grow your army!
+              </div>
+      
+              
+      <div style="text-align:center;width:600px;padding: 10px 25px 10px 65px;color:#F0F8FF;font-family:Verdana; font-size:20px;font-weight:bold;">
+        Your army code: 8DB329      </div>
+      
+      <div style='text-align:center;padding-bottom:20px;'>
+        
+        <form onsubmit="ajaxFormSend('globalContainer', 'army.php', this);return false;" method="post">
+          <div style='padding-bottom:10px;'>
+            <input type="text" name='army_code'/>
+          </div>
+          <div class="imgButton">
+            <input alt="Attack Monster" type="image" src="https://castleagegame1-a.akamaihd.net/graphics/request_pa_army.gif" name="Attack Dragon" />
+          </div>
+          <input type="hidden" name="action" value="invite_army_code" />
+          <input type="hidden" name="ajax" value="1" />
+        </form>
+        
+      </div>
+          </div>
+    
+    
+
+      
+
+  </div>
+
+        </td></tr></table>
+        <div style="width:740px;height:40px;"></div>
+    </div>    
+    
+    <div id="single_popup_background" style="cursor:pointer; display:none;" class="connect_castlepb_bg" onclick="hidePositionBox();  return false;"></div>
+  
+  <div id="single_popup" class="castlepb2" style="display:none;">
+        <table cellspacing="0" cellpadding="0" >
+          <tr>
+              <td>
+              <div style="clear:both"></div>
+                <div id="single_popup_content"></div> 
+              <div style="clear:both"></div>          
+              </td>   
+          </tr>
+        </table>
+  </div>
+            
+            
+    </div>    <div id="persistent_layer" style="width:760px;position:absolute;top:0px;height:0px;">
+      <div style="width:545px;height:185px;position:relative;float:right;top:105px;overflow:hidden;" id="hot_swap_gen_incl_container">
+        <style type="text/css">
+.noClick {pointer-events:none;z-index:-1;}
+.haveClick {pointer-events:auto;z-index:1001;}
+</style>
+        <div id="pin_hover" style="visibility:hidden;z-index:1006;  position:absolute;width:210px;">
+        <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_top.jpg');width:210px;height:12px;">
+        </div>
+        <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_middle.jpg');width:210px;">
+          <div style="padding: 7px 7px 10px 10px;">
+            <div style="width:190px;color:#ffffff;font-size:10px;text-align:center;">
+              Click to Pin            </div>
+          </div>
+        </div>
+        <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_bottom.jpg');width:210px;height:12px;">
+        </div>
+      </div>
+            <div id="unpin_hover" style="visibility:hidden;z-index:1006;  position:absolute;width:210px;">
+        <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_top.jpg');width:210px;height:12px;">
+        </div>
+        <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_middle.jpg');width:210px;">
+          <div style="padding: 7px 7px 10px 10px;">
+            <div style="width:190px;color:#ffffff;font-size:10px;text-align:center;">
+              Click to Unpin            </div>
+          </div>
+        </div>
+        <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_bottom.jpg');width:210px;height:12px;">
+        </div>
+      </div>
+    <div id="hot_swap_general_outer" class="noClick" style="width:476px;height:261px;position:relative;top:8px;left:-186px;overflow:hidden;">
+  <div id='recent_general_swap' style='background-image:url("https://castleagegame1-a.akamaihd.net/graphics/hot_leftexpand2.gif");width:540px;height:259px;font-weight:bold;position:relative;left:0px;display:none;'>
+    <div style="width:462px;height:252px;overflow:hidden;" id="quickSwapGeneralsSection">
+      <div style="width:100%;height:22px;">
+        <div style='float:left;width:110px;height:17px;padding-top:5px;color:#f9df66;font-size:10px;text-align:center;overflow:hidden;'>Quick Select:</div>
+        <div style="float:left;height:100%;width:210px;text-align:center;"></div>
+      </div>
+      <div style='padding:0px;'>
+        <div style='font-size:30px; text-align:center; padding-top:40px; color:white;'>
+          LOADING...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="hot_swap_class_outer" class="noClick" style="width:59px;height:380px;position:relative;left:400px;top:-253px;overflow:hidden;">
+  <div id="hot_swap_class_div" style="width:59px;height:190px;position:relative;z-index:1001;top:98px;left:4px;display:none;">
+    <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_classdropdown.gif');background-size:59px 190px;background-repeat:no-repeat;width:59px;height:190px;padding:70px 0px 0px 0px;text-align:center;">
+              <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('warrior');">
+          <img src="https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif" style="width:20px;margin:3px 0px 0px 0px;" />
+          <div style="width:100%;height:14px;overflow:hidden;color:white;font-size:6pt;">WARRIOR</div>
+        </div>
+                <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('rogue');">
+          <img src="https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif" style="width:20px;margin:3px 0px 0px 0px;" />
+          <div style="width:100%;height:14px;overflow:hidden;color:white;font-size:6pt;">ROGUE</div>
+        </div>
+                <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('mage');">
+          <img src="https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif" style="width:20px;margin:3px 0px 0px 0px;" />
+          <div style="width:100%;height:14px;overflow:hidden;color:white;font-size:6pt;">MAGE</div>
+        </div>
+            </div>
+  </div>
+</div>
+<div id="hot_swap_loadouts_div" style="width:94px;height:167px;position:relative;z-index:1001;left:445px;top:-633px;">
+    <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_rightexpand.gif');background-size:94px 167px;background-repeat:no-repeat;width:94px;height:166px;padding:2px 0px 0px 0px;text-align:center;">
+    <div style="width:66px;height:120px;margin:0px 3px 0px 24px;overflow:hidden;">
+        <div style="color:white;margin:40px 0px 0px 0px;font-size:8pt;">No loadouts available</div>
+      </div>
+    <div style="width:66px;height:20px;margin:0px 0px 0px 24px;">
+          </div>
+    <div style="width:66px;height:21px;margin:0px 0px 0px 24px;text-align:center;">
+      <img id="hot_swap_loadout_scrollup" src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_class_down.jpg" style="cursor:pointer;" onclick="scrollHotSwapLoadoutsDown(0, 0);" />
+      <img id="hot_swap_loadout_scrolldown" src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_class_up.jpg" style="cursor:pointer;" onclick="scrollHotSwapLoadoutsUp(0);" />
+    </div>
+  </div>
+</div>
+<div style='background-image:url("https://castleagegame1-a.akamaihd.net/graphics/hot_general_container.gif");width:178px;height:167px;float:right;font-weight:bold;z-index:1002;position:relative;left:-80px;top:-800px;'>
+  <div style='color:#ffd20b; height:27px; width:178px;text-align:center; font-size:14px; overflow:hidden;'>
+    <div style='float:left; width:20px; padding: 3px 0 0 2px; cursor:pointer;' class="imgButton">
+      <img id='recent_general_swap_open' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topleft.jpg"  onclick="openRecentGenerals(false);"/>
+      <img id='recent_general_swap_close' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topright.jpg" style='display:none;' onclick="closeRecentGenerals();"/>
+    </div>
+    <div style="float:left;padding-top:5px;width:123px;white-space:nowrap;overflow:hidden;font-size:9pt;line-height:1.5;">
+    <img src='https://castleagegame1-a.akamaihd.net/graphics/genally_link_secondary.gif' style='height:18px;' /><span style='position:relative; top:-5px;'>Zin</span>   </div>
+    <div style='float:right;width:20px;padding:3px 0 0 0px;cursor:pointer;margin-right:7px;' class="imgButton">
+      <img id='hot_swap_loadouts_open' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topright.jpg" style="display:none;" onclick="openHotSwapLoadouts();"/>
+      <img id='hot_swap_loadouts_close' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topleft.jpg" onclick="closeHotSwapLoadouts();"/>
+    </div>
+  </div>
+  <div style="float:left;width:116px;">
+    <div style='padding-left:4px;'>
+      <a href="generals.php" onclick="ajaxLinkSend('globalContainer', 'generals.php'); return false;" ><div class="imgButton"><img title="click to select general" width="110" height="110" src="https://castleagegame1-a.akamaihd.net/graphics/hero_zin.jpg" /></div></a>    </div>
+    <div style='font-size:14px;'>
+              <div style='float:left; color:#fec182; padding: 5px 0 0 32px; width:25px; text-align:center;font-weight:normal;'> 
+          18        </div>
+        <div style='float:left; color:#b8e1fd; padding: 5px 0 0 30px; width:25px; text-align:center;font-weight:normal;'> 
+          18        </div>
+        <div style='clear:both;'></div>
+          </div>
+  </div>
+  <div style="float:left; width:60px;">
+    <div onclick="ajaxLinkSend('globalContainer','item_equip.php');return false;" style='padding: 0 0 0 5px;cursor:pointer;'>
+                <div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+            <img title="Genesis Sword" alt="Genesis Sword" src="https://castleagegame1-a.akamaihd.net/graphics/eq_earth_epic_sword.jpg" style="width:24px;height:24px;"/>
+          </div>
+                  <div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+            <img title="Deathshield" alt="Deathshield" src="https://castleagegame1-a.akamaihd.net/graphics/eq_death_epic_shield.jpg" style="width:24px;height:24px;"/>
+          </div>
+                  <div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+            <img title="Crusader Armor" alt="Crusader Armor" src="https://castleagegame1-a.akamaihd.net/graphics/crusader_armor.jpg" style="width:24px;height:24px;"/>
+          </div>
+                  <div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+            <img title="Conquerors War Helm" alt="Conquerors War Helm" src="https://castleagegame1-a.akamaihd.net/graphics/eq_malekus_legacy_helm.jpg" style="width:24px;height:24px;"/>
+          </div>
+                  <div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+            <img title="Talisman of Demons" alt="Talisman of Demons" src="https://castleagegame1-a.akamaihd.net/graphics/eq_meph_legacy_amulet.jpg" style="width:24px;height:24px;"/>
+          </div>
+                  <div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+            <img title="Solar Desolation" alt="Solar Desolation" src="https://castleagegame1-a.akamaihd.net/graphics/crusader_spell4.jpg" style="width:24px;height:24px;"/>
+          </div>
+                  <div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+            <img title="Mythril Fists" alt="Mythril Fists" src="https://castleagegame1-a.akamaihd.net/graphics/eq_darius_gauntlets.jpg" style="width:24px;height:24px;"/>
+          </div>
+                  </div>
+  </div>
+  <div style="float:left;width:60px;height:28px;margin-top:2px;">
+    <img src="https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif" style="float:left;width:24px;margin:2px 4px 0px 4px;" />
+    <img id="hot_swap_class_open" src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_class_down.jpg" style="margin:4px 0px 0px 0px;cursor:pointer;" onclick="openHotSwapClass();" />
+    <img id="hot_swap_class_close" src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_class_up.jpg" style="display:none;margin:4px 0px 0px 0px;cursor:pointer;" onclick="closeHotSwapClass();" />
+  </div>
+</div>      </div>
+    </div>
+  </div>  
+</div>
+<input type='hidden' id='current_pg_url' value="army.php?"/>
+<input type='hidden' id='current_pg_info' value="army.php?close_result=global_bottom"/>

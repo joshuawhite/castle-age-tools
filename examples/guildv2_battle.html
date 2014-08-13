@@ -1,0 +1,3485 @@
+<div class="game" id="guildv2_battle" style="background-image: url('https://castleagegame1-a.akamaihd.net/graphics/ws_middle.jpg'); width: 760px; padding: 0 0px;overflow-x:hidden;">
+	<div id="globalcss" class="layout">
+		    	<div style="height:25px;">
+      		<div id="main_bntp" width="100%" >
+      			<div style="clear:both"></div>
+					<div style="float:left;width:200px;">
+						<div style="clear:both"></div>
+
+
+						<div style="clear:both"></div>
+					</div>
+
+	        		<div style="float:right;color:#b09060;padding-right:0px;padding-top:5px;font-family:Times New Roman;font-size:10pt;">
+					<a href="help.php" onclick="ajaxLinkSend('globalContainer', 'help.php'); return false;" ><span style='color:#b09060;'>Help/FAQ</span></a> |
+					<a target="_blank" href="http://www.castleageforums.com/cforum/" style="color:#b09060" > Forum </a> |
+					<a href="http://web.castleagegame.com/castle/priv_policy.html" style="color:#b09060" > Privacy Policy </a> |
+															<a href="army.php" onclick="ajaxLinkSend('globalContainer', 'army.php'); return false;" ><span style='color:#b09060;'>My Army (1567)</span></a> |
+										<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><span style='color:#b09060;'>My Stats</span></a>&nbsp;&nbsp;
+					|
+																	Welcome Joshua {HØD} (<a onclick="javascript:document.location.href='connect_login.php?platform_action=CA_web3_logout';" href="#">Logout</a>)&nbsp;&nbsp;
+												        		</div>
+        		<div style="clear:both;"></div>
+      		</div>
+    	</div>
+		    	<div id="main_sts_container">
+    		
+			<div style='width:760px;height:79px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_background.jpg");font-size:10px;font-weight:bold;'>
+
+				<div style="height:50px;overflow:hidden;">
+
+					<div style="float:left;width:150px;overflow:hidden;">
+
+						<div style="float:left;width:60px;height:100%">
+							<div style='padding:5px 0 0 15px;'>
+								<div style="width:40px;height:40px;cursor:pointer;"
+									 onClick="PositionAndDisplayPopupAtTop('headerPersistEnergyRefill', this, '10', '200','noclass'); return false">
+								     		<div style='display:none;' id="headerPersistEnergyRefill">
+			
+						    		 <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_energy.jpg');background-repeat:no-repeat;">
+										<div style='float:left; padding:21px 0 0 24px; width:190px;'>
+											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_dolomar.jpg" />
+										</div>
+										<div style='float:left;'>
+											<div style="padding:0px; color:#591700; padding-top:30px;">
+																							<div style='float:left;'>
+													<a href="guildv2_battle.php?&quickbuychoice=6&option=2" onclick="ajaxLinkSend('globalContainer', 'guildv2_battle.php?&quickbuychoice=6&option=2'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_recharge.gif" /></div></a>												</div>
+												<div style='float:left; font-weight:bold; font-size:11px; padding-left:50px;'>
+													Spend 10 Favor Points to refill energy immediately.<br/>
+													Energy refills are capped at 2000 energy per refill.
+												</div>
+																						<div style='clear:both;'></div>
+											</div>
+											
+											<div style='padding:0px; color:#2d4200; padding-top:19px; '>
+												<div style='float:left;'>
+													<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_keep.gif" /></div></a>												</div>
+												<div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+													1) Allocate skill points to Max Energy Points at your keep.
+												</div>
+												<div style='clear:both;'></div>
+											</div>
+
+											<div style='padding:0px; color:#2d4200; padding-top:5px;'>
+																									<div style='float:left;'>
+														<a href="guildv2_battle.php?&refill=ene10" onclick="ajaxLinkSend('globalContainer', 'guildv2_battle.php?&refill=ene10'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_potion.gif" /></div></a>													</div>
+													<div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+														2) Consume a 10 Energy Potion.
+													</div>
+																								<div style='clear:both;'></div>
+											</div>
+										</div>
+										<div style='clear:both;'></div>
+									</div>
+						    		</div>								</div>
+							</div>
+						</div>
+						<div style="float:left;width:90px;">
+							<div style='padding:10px 0 0 0;height:15px;' title="Used for Quests. Get more from The Oracle.">
+								Energy
+																	<div style="float:right;">
+		                            	<span id="energy_time_container" style="color: #197B30;">+<span id="energy_time_value" style="font-size:9px"></span></span>
+		                            </div>
+	                        								</div>
+							<div style='padding:2px 0 0 0;' title="16/554">
+								<a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;"  style="text-decoration:none;color: #4b3715;font-size:11px;"><strong><span id="energy_current_value">16</span>/<span style=''>554</span></strong></a>							</div>
+						</div>
+						<div style="clear:both;"></div>
+
+					</div>
+
+					<div style="float:left;width:138px;overflow:hidden;">
+
+						<div style="float:left;width:49px;height:100%">
+							<div style='padding:5px 0 0 5px;'>
+								<div style="width:40px;height:40px;cursor:pointer;"
+									onClick="PositionAndDisplayPopupAtTop('headerPersistStaminaRefill', this, '10', '200','noclass'); return false">
+								     		<div style='display:none;' id="headerPersistStaminaRefill">
+			
+						    		 <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_stamina.jpg');background-repeat:no-repeat;">
+										<div style='float:left; padding:21px 0 0 24px; width:190px;'>
+											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_dolomar.jpg" />
+										</div>
+										<div style='float:left;'>
+											<div style="padding:0px; color:#591700; padding-top:30px;">
+																							<div style='float:left;'>
+													<a href="guildv2_battle.php?&quickbuychoice=6&option=1" onclick="ajaxLinkSend('globalContainer', 'guildv2_battle.php?&quickbuychoice=6&option=1'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_recharge.gif" /></div></a>												</div>
+												<div style='float:left; font-weight:bold; font-size:11px; padding-left:50px;'>
+													Spend 10 Favor Points to refill stamina immediately.<br/>
+													Stamina refills are capped at 1000 energy per refill.
+												</div>
+																						<div style='clear:both;'></div>
+											</div>
+											
+											<div style='padding:0px; color:#2d4200; padding-top:19px; '>
+												<div style='float:left;'>
+													<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_keep.gif" /></div></a>												</div>
+												<div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+													1) Allocate skill points to Max Stamina Points at your keep.
+												</div>
+												<div style='clear:both;'></div>
+											</div>
+
+											<div style='padding:0px; color:#2d4200; padding-top:5px;'>
+																									<div style='float:left;'>
+														<a href="guildv2_battle.php?&refill=stm10" onclick="ajaxLinkSend('globalContainer', 'guildv2_battle.php?&refill=stm10'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_potion.gif" /></div></a>													</div>
+													<div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+														2) Consume a 10 Stamina Potion.
+													</div>
+																								<div style='clear:both;'></div>
+											</div>
+										</div>
+										<div style='clear:both;'></div>
+									</div>
+						    		</div>								</div>
+							</div>
+						</div>
+						<div style="float:left;width:89px;">
+							<div style='padding:10px 0 0 0;height:15px;' title="Used for Battles.">
+								Stamina
+																	<div style="float:right;">
+	                            		<span id="stamina_time_container" style="color: #197B30;">+<span id="stamina_time_value" style="font-size:9px"></span></span>
+	                            	</div>
+	                        								</div>
+							<div style='padding:2px 0 0 0;' title="8/301">
+								<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;"  style="text-decoration: none; color:#4b3715;font-size:11px;"><strong><span id="stamina_current_value">8</span>/<span style=''>301</span></strong></a>							</div>
+						</div>
+						<div style="clear:both;"></div>
+
+					</div>
+
+					<div style="float:left;width:138px;overflow:hidden;">
+
+						<div style="float:left;width:49px;height:100%">
+							<div style='padding:5px 0 0 5px;'>
+								<div style="width:40px;height:40px;cursor:pointer;"
+									onClick="PositionAndDisplayPopupAtTop('headerPersistHealthRefill', this, '10', '200','noclass'); return false">
+								     		<div style='display:none;' id="headerPersistHealthRefill">
+			
+						    		 <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_health.jpg');background-repeat:no-repeat;">
+										<div style='float:left; padding:21px 0 0 24px; width:190px;'>
+											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_dolomar.jpg" />
+										</div>
+										<div style='float:left;'>
+											<div style="color:#591700;padding-top:30px;">
+												<div style='float:left;'>
+													<form onsubmit="ajaxFormSend('globalContainer', 'guildv2_battle.php?', this);return false;" method="post" id="headerHealForm" >
+				                						<input type="hidden" value="heal_avatar" name="action" />
+				                						<input type="hidden" name="bqh" value="7c1a774037aed0bede0edf04422389f4" />
+				            							<input type="image" class="imgButton" alt="Heal" src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_heal.gif" value="Heal Wounds" />
+				                						<input type="hidden" name="ajax"  value="1" />
+				                					</form>
+												</div>
+												<div style='float:left; font-weight:bold; font-size:11px;padding-left:50px;'>
+													Spend $95,175 gold to heal to Max Health.<br/>
+													Health is used in PVP duel formats and monsters.
+												</div>
+												<div style='clear:both;'></div>
+											</div>
+											
+											<div style='color:#2d4200;padding-top:40px; '>
+												<div style='float:left;'>
+													<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_keep.gif" /></div></a>												</div>
+												<div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+													Visit the keep to restore your Health!
+												</div>
+												<div style='clear:both;'></div>
+											</div>
+
+										</div>
+										<div style='clear:both;'></div>
+									</div>
+						    		</div>								</div>
+							</div>
+						</div>
+						<div style="float:left;width:89px;">
+							<div style='padding:10px 0 0 0;height:15px;' title="Defend yourself in Battles.">
+								Health
+																	<div style="float:right;">
+	                            		<span id="health_time_container" style="color: #197B30;">+<span id="health_time_value" style="font-size:9px"></span></span>
+	                            	</div>
+	                        								</div>
+							<div style='padding:2px 0 0 0;' title="149/230">
+								<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;"  style="text-decoration: none; color:#4b3715;font-size:11px;"><strong><span id="health_current_value">149</span>/<span style=''>230</span></strong></a>							</div>
+						</div>
+						<div style="clear:both;"></div>
+
+					</div>
+
+					<div style="float:left;width:140px;overflow:hidden;">
+
+						<div style="float:left;width:52px;height:100%">
+							<div style='padding:5px 0 0 5px;'>
+								<div style="width:40px;height:40px;cursor:pointer;"
+									onClick="PositionAndDisplayPopupAtTop('headerPersistGoldRefill', this, '10', '200','noclass'); return false">
+								     		<div style='display:none;' id="headerPersistGoldRefill">
+			
+						    		 <div style="width:740px;height:203px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/oracle_container_gold.jpg');background-repeat:no-repeat;">
+										<div style='float:left; padding:21px 0 0 24px; width:190px;'>
+											<img style="height:160px;" src="https://castleagegame1-a.akamaihd.net/graphics/hero_dolomar.jpg" />
+										</div>
+										<div style='float:left;'>
+											<div style="color:#591700; padding-top:30px;">
+												<div style='float:left;'>
+													<form onsubmit="ajaxFormSend('globalContainer', 'guildv2_battle.php?', this);return false;" method="post">
+					        							<input type="image" class="imgButton" name="do" src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_bank.gif" value="Stash"/>
+					        							<input type="hidden" name="bqh" value="7c1a774037aed0bede0edf04422389f4" />
+					        							<input type="hidden" name="header_stash_gold" value="1" />
+					        							<input type="hidden" name="ajax"  value="1" /> 
+					    	            			</form>
+												</div>
+												<div style='float:left; font-weight:bold; font-size:11px; padding-left:50px;'>
+													Spend a 10% fee to bank 2,610,410,822 gold.<br/>
+													Banked gold cannot be stolen by other players!
+												</div>
+												<div style='clear:both;'></div>
+											</div>
+											
+											<div style='color:#2d4200; padding-top:40px; '>
+												<div style='float:left;'>
+													<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ><div class="imgButton"><img src="https://castleagegame1-a.akamaihd.net/graphics/oracle_btn_keep.gif" /></div></a>												</div>
+												<div style='float:left; font-size:11px; padding:8px 0 0 10px; font-weight:bold;'>
+													Visit the keep to bank your gold!
+												</div>
+												<div style='clear:both;'></div>
+											</div>
+
+										</div>
+										<div style='clear:both;'></div>
+									</div>
+						    		</div>								</div>
+							</div>
+						</div>
+						<div style="float:left;width:88px;">
+							<div style='padding:10px 0 0 0;height:15px;' title="Earn Gold through Questing, Battles, Duels and The Oracle.">
+								Gold
+								<div style="float:right;">
+                            		<span style="color: #197B30;">+<span id="gold_time_value" style="font-size:9px"></span></span>
+                            	</div>
+							</div>
+							<div style='padding:2px 0 0 0;' title="$2,610,410,822">
+								<a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;"  style="text-decoration: none; color: #4b3715;font-size:11px;"><strong id="gold_current_value" class="gold">$2.61B</strong></a>							</div>
+						</div>
+						<div style='clear:both;'></div>
+
+					</div>
+
+					<div style="float:left;width:180px;overflow:hidden;" title="Your XP: 347526/348100&#013;You need 574 Experience Points to get to the next level.">
+						<div style='padding:11px 0 0 17px;text-align:center;height:15px;overflow:hidden;'>
+		                    <div style="overflow:hidden;width:154px;height:15px;background-color:black;">
+		                    	<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/header_persist_xpbar.jpg');text-align:left;float:left;height:15px;width:81%;">&nbsp;</div>
+		                    </div>
+
+		                    <div style="position:relative;top:-15px;z-index:0;">
+	                			<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;"  style="text-decoration: none;font-size:10px;"><div style='color:#ffffff'>Level: 235</div></a>                			</div>
+		                </div>
+		                <div id="header_player_xp_totals" style='padding:2px 0 0 20px;display:none;filter:alpha(opacity=100);'>
+		                	XP: <a href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;"  style="text-decoration: none; color: #4b3715;font-size:11px;"><strong>347526/348100</strong></a>		                </div>
+		                <div id="header_player_xp_needed" style='padding:2px 0 0 20px;filter:alpha(opacity=100);'>
+		                	XP needed: <a href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;"  style="text-decoration: none; color: #197B30;font-size:11px;"><strong>574</strong></a>		                </div>
+					</div>
+
+					<div style="clear:both;"></div>
+				</div>
+
+				<div id="mainHeaderTabs" style="height:28px;color:#6fa5af;font-weight:normal;overflow:hidden;">
+					<div style="padding:4px 0 0 0;">
+
+						<div style="float:left;padding:0 0 0 5px;">
+							<img src="https://castleagegame1-a.akamaihd.net/graphics/header_blue_left.jpg" 
+								 style="cursor:pointer"
+								 onClick="switchTabSection('main_header_tabs_view.php', 'mainHeaderTabs', '2_guildv2_battle.php?');"
+								 />
+						</div>
+
+						<div style="float:left;padding:0 0 0 10px;">
+							<div style='width:163px;height:22px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_collect_container.jpg");'>
+								<div style='float:left;width:25px;'>
+									<img style="float:left;" width="20" height="20" src="https://castleagegame1-a.akamaihd.net/graphics/demi_symbol_2.gif" />
+								</div>
+								<div style="float:left;width:65px;">
+									<div style="padding:4px 0 0 0;">
+										Demi:
+									</div>
+								</div>
+								<div style="float:left;width:70px;">
+										<div style="padding:4px 0 0 10px;font-weight:bold;">21h 30m </div>								</div>
+
+								<div style="clear:both;"></div>
+							</div>
+						</div>
+
+						<div style="float:left;padding:0 0 0 10px;">
+							<div style='width:163px;height:22px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_collect_container_items.jpg");'>
+								<div style="float:left;width:90px;">
+									<div style="padding:4px 0 0 23px;">
+										Archive:
+									</div>
+								</div>
+								<div style="float:left;width:70px;">
+									<div style="padding:4px 0 0 0;font-weight:bold;">21hrs 30m</div>								</div>
+
+								<div style="clear:both;"></div>
+							</div>
+						</div>
+
+						<div style="float:left;padding:0 0 0 10px;">
+							<div style='width:163px;height:22px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_collect_container_wood.jpg");'>
+								<div style="float:left;width:90px;">
+									<div style="padding:4px 0 0 30px;">
+										Resource:
+									</div>
+								</div>
+								<div style="float:left;width:70px;">
+									<div style="padding:4px 0 0 10px;font-weight:bold;">6h 17m </div>								</div>
+
+								<div style="clear:both;"></div>
+							</div>
+						</div>
+
+						<div style="float:left;padding:0 0 0 10px;">
+							<div style='width:163px;height:22px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/header_persist_collect_container_crystal.jpg");'>
+								<div style="float:left;width:90px;">
+									<div style="padding:4px 0 0 30px;">
+										Crystal:
+									</div>
+								</div>
+								<div style="float:left;width:70px;">
+									<div style="padding:4px 0 0 10px;font-weight:bold;">6h 17m </div>								</div>
+
+								<div style="clear:both;"></div>
+							</div>
+						</div>
+
+						<div style="float:left;padding:0 0 0 10px;">
+							<img src="https://castleagegame1-a.akamaihd.net/graphics/header_blue_right.jpg"
+								 style="cursor:pointer"
+								 onClick="switchTabSection('main_header_tabs_view.php', 'mainHeaderTabs', '4_guildv2_battle.php?');"
+								 />
+						</div>
+
+						<div style="clear:both;"></div>
+
+					</div>
+				</div>
+				
+			</div>
+
+			<input type="hidden" id="gold_time_sec" value="1855" />
+		    <input type="hidden" id="gold_current_value_amount" value="2610410822" />
+		    <input type="hidden" id="gold_current_recharge_time" value="3600" />
+		    <input type="hidden" id="gold_current_increment" value="205599570" />
+		    
+		    		        <input type="hidden" id="stamina_time_sec" value="26" />
+		        <input type="hidden" id="stamina_current_value_amount" value="8" />
+		        <input type="hidden" id="stamina_current_max" value="301" />
+		        <input type="hidden" id="stamina_current_recharge_time" value="300" />
+		    		    
+		    		        <input type="hidden" id="energy_time_sec" value="168" />
+		        <input type="hidden" id="energy_current_value_amount" value="16" />
+		        <input type="hidden" id="energy_current_max" value="554" />
+		        <input type="hidden" id="energy_current_recharge_time" value="300" />
+		    		    
+		    		        <input type="hidden" id="health_time_sec" value="56" />
+		        <input type="hidden" id="health_current_value_amount" value="149" />
+		        <input type="hidden" id="health_current_max" value="230" />
+		        <input type="hidden" id="health_current_recharge_time" value="180" />
+		        	</div>
+
+		<div id="app_body_container">
+
+    	<div id="main_bn_container">
+    	          		<div id="main_bn" valign="top" class=''>
+							<div style='float:left; padding:4px 0 0 4px; text-align:left;'>
+																
+						<div style='width:161px;height:4px;'></div>
+	            	    														<div id="persistHomeFPPlateClosed" title="Favor Points" style='display:none;cursor:pointer;width:76px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_fp_closed_plate.gif");'>
+								<div style="float:left;width:50px;height:100%;" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;">
+								</div>
+								<div style="float:left;width:26px;height:100%;" 
+									 onclick="$('#persistHomeFPPlateClosed').hide();
+											  $('#persistHomeFPPlateOpen').show();
+											  quick_ajax('index.php?headerFavorPlate=1');
+											  ">
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+
+							<div id="persistHomeFPPlateOpen" title="Favor Points" style='display:block;cursor:pointer;width:140px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_fp_open_plate.gif");'>
+								<div style="float:left;width:50px;height:100%;" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;">
+								</div>
+								<div style="float:left;width:90px;height:100%;overflow:hidden;" 
+									 onclick="$('#persistHomeFPPlateClosed').show();
+									 		  $('#persistHomeFPPlateOpen').hide();
+									 		  quick_ajax('index.php?headerFavorPlate=0');">
+									<div style='padding:3px 0 0 10px;color:white;text-align:center;font-weight:bold;font-size:11px;'>
+										<span style="font-size:9px;">Favor:</span><br/>
+										32									</div>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+
+							<div style='width:161px;height:4px;'></div>
+															<div id="persistHomeConquestPlateClosed" title="Conquest Tokens" style='display:none;cursor:pointer;width:76px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_conquest_closed_plate.gif");'>
+									<div style="float:left;width:50px;height:100%;" onclick="ajaxLinkSend('globalContainer', 'guildv2_conquest_command.php'); return false;">
+									</div>
+									<div style="float:left;width:26px;height:100%;" 
+										 onclick="$('#persistHomeConquestPlateClosed').hide();
+										 		  $('#persistHomeConquestPlateOpen').show();
+										 		  quick_ajax('index.php?headerConquestTokenPlate=1');
+										 		  ">
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+
+								<div id="persistHomeConquestPlateOpen" title="Conquest Tokens" style='display:block;cursor:pointer;width:140px;height:35px;background-image:url("https://castleagegame1-a.akamaihd.net/graphics/home_conquest_open_plate.gif");'>
+									<div style="float:left;width:50px;height:100%;" onclick="ajaxLinkSend('globalContainer', 'guildv2_conquest_command.php'); return false;">
+									</div>
+									<div style="float:left;width:90px;height:100%;overflow:hidden;" 
+										 onclick="$('#persistHomeConquestPlateClosed').show();
+										 		 $('#persistHomeConquestPlateOpen').hide();
+										 		 quick_ajax('index.php?headerConquestTokenPlate=0');
+										 		 ">
+										<div style='padding:3px 0 0 10px;color:white;text-align:center;font-weight:bold;font-size:11px;'>
+											<span style="font-size:9px;">Tokens:</span><br/>
+											1										</div>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							
+							
+										</div>
+				
+			</div>
+    	</div>
+
+                <div style='float:left;height:1px;width:1px;'>
+        	<input type="text" id="main_anchor" style="width:1px; height:1px; background-color:white; border:0; margin:0; padding:0; float:left;" />
+        </div>
+        
+
+        <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/mainnav_holderbar.jpg');width:760px;height:44px;">
+            <div id="gchat_anchor"></div>
+		<div id='collapsedGuildChat'
+			 onclick='$("#expandedGuildChat").toggle();$("#chatGuildChatTextInput").focus();scrollToBottom("#chatGuildChat");' 
+			 style="background-image: url('https://castleagegame1-a.akamaihd.net/graphics/mainnav_top_chat.gif'); width:51px; height:30px;position:absolute; font-family: Verdana; cursor:pointer;z-index:1; margin: 5px 0 0 5px;">
+			<div class='chatNotificationCount' style='text-align:center; font-weight:bold;padding: 3px 16px 0 9px;'></div>
+		</div>
+
+		<div class="mainChatView" id='wallAndChatSection' style="background-image: url('https://castleagegame1-a.akamaihd.net/graphics/chat_bubble_bg.gif'); width:365px; height:306px;position:absolute; z-index:100; font-family: Verdana; text-align:left; display:none; margin: 5px 0 0 5px;font-weight:bold;">
+			
+    <div class='chatNotificationCount'
+         style='text-align:center; font-weight:bold;padding:3px 16px 0 9px; width:26px; height:25px; cursor:pointer;' 
+         onclick='$(".mainChatView").hide();'>
+    </div>
+    <div id='wallChatHeader' style='padding-top:0px; height:35px; padding-bottom:2px;'>
+        <div style='float:left; width:130px;'>
+            <div style='color:white; font-weight:bold; font-size:11px;padding:12px 0 0 20px;'>
+                Wall 
+            </div>
+        </div>
+
+        <div style='padding:7px 0 0 140px;'>
+            <div style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_wall_on.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;text-align:center;' 
+                 onMouseOut="hideItemPopup('wall_chat_hover_info',event);return false;"
+                 onMouseOver="showItemPopup('wall_chat_hover_info', this, 43, 10);return false;"
+                >
+                <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+                    <div style='width:20px;text-align:center;'>
+                        1                    </div>
+                </div>
+            </div>
+
+            <div style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_chat_off.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;cursor:pointer;text-align:center;' 
+                 onClick="ajaxLinkSend('wallAndChatSection', 'wall_chat_log_view.php?mainChatTab=2');"
+                 onMouseOut="hideItemPopup('player_chat_hover_info',event);return false;"
+                 onMouseOver="showItemPopup('player_chat_hover_info', this, 43, 10);return false;"
+                >
+                <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+                    <div style='width:20px;text-align:center;'>
+                        1                    </div>
+                </div>
+            </div>
+
+            <div class="guildChatTab"
+                 style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_guild_off.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;cursor:pointer;text-align:center;' 
+                 onMouseOut="hideItemPopup('guild_chat_hover_info',event);return false;"
+                 onMouseOver="showItemPopup('guild_chat_hover_info', this, 43, 10);return false;"
+                >
+                <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+                    <div class="chatNotificationCount" style='width:20px;text-align:center;'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style='clear:both;'></div>
+    </div>
+
+    <div class='mainChatContent' style='text-align:left; color:white;padding: 0px 10px;font-size:12px;overflow-y:auto;height:210px;width:340px;'>
+                    <div class="imgButton" 
+                 id="main_chat_wall_post_0" 
+                 style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/chat_barsmall.jpg');width:330px;height:29px;cursor:pointer;"
+                 onClick="$('#main_chat_wall_post_arrow_open_0').toggle();
+                          $('#main_chat_wall_post_arrow_closed_0').toggle();
+                          $('#main_chat_wall_post_content_0').toggle();
+                         ">
+                <div style="padding:4px 0 0 0;">
+                    <div style="float:left;padding:0 0 0 5px;">
+                        <img id="main_chat_wall_post_arrow_open_0"
+                             src="https://castleagegame1-a.akamaihd.net/graphics/keep_msgopen.jpg" 
+                             width="21" 
+                             height="21" 
+                        />
+                        <img id="main_chat_wall_post_arrow_closed_0"
+                             style="display:none;"
+                             src="https://castleagegame1-a.akamaihd.net/graphics/keep_msgclosed.jpg" 
+                             width="21" 
+                             height="21" 
+                        />
+                    </div>
+                    <div style="float:left;padding:0 0 0 5px;color:#12a9fa;">
+                        <a href="keep.php?user=500000001469700" onclick="ajaxLinkSend('globalContainer', 'keep.php?user=500000001469700'); return false;"  style="color:#12a9fa;">Joshua {HØD}</a>:
+                    </div>
+                    <div style="float:left;padding:3px 0 0 8px;font-size:10px;">
+                        9:54PM 5/14/2014                    </div>
+                    <div style="float:right;padding:0 5px 0 0;">
+                        <img onClick="event.stopPropagation();
+                                      ajaxLinkSend('wallAndChatSection', 'wall_chat_log_view.php?main_chat_delete_wall_post=0');
+                                      $('#main_chat_wall_post_0').fadeOut('slow', function() {} );
+                                      $('#main_chat_wall_post_content_0').fadeOut('slow', function() {});
+                                      "
+                             style="cursor:pointer"
+                             src="https://castleagegame1-a.akamaihd.net/graphics/keep_deletemsg.jpg" 
+                             width="22"
+                             height="21"
+                        />
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div id="main_chat_wall_post_content_0" style="width:330px;word-wrap:break-word;font-size:12px;font-weight:bold;">
+                <div style="padding:3px 0 10px 10px;">
+                    I'm Joshua (3EE586), JJ (8D58C7), Juliette (8FFA81), and Penella (2E8EB6)                </div>
+            </div>
+            <div style="clear:both"></div>
+            </div>
+    <div style="clear:both"></div>
+
+    <div style="width:280px; margin:5px 0 0 10px;">
+        <form action="/" id="mainChatWallPostForm">
+            <input id="mainChatWallTextInput" 
+                   type="text"
+                   name="main_chat_wall_post"
+                   style="width:345px;height:18px;background-color:black;color:white;border:none;"/>
+        </form>
+    </div>
+    <div style="clear:both"></div>
+
+    <script>
+        $("#mainChatWallTextInput").focus();
+
+        // only needed for textarea tag
+        // $("#mainChatWallPostForm").keypress(function(event) {
+        //     if (event.which == 13) {
+        //         $("#mainChatWallPostForm").submit();
+        //     }
+        // });
+
+        // Attach a submit handler to the form
+        $( "#mainChatWallPostForm" ).submit(function( event )
+        {
+            // Stop form from submitting normally
+            event.preventDefault();
+            ajaxFormSend('wallAndChatSection', 'wall_chat_log_view.php', $(this));
+        });
+    </script>
+
+<script>
+  scrollToBottom('.mainChatContent');
+
+  function guildChatTabHandler()
+  {
+      $('#wallAndChatSection').toggle();
+      $('#expandedGuildChat').toggle();
+      scrollToBottom('#chatGuildChat');
+      $('#chatGuildChatTextInput').focus();
+  }
+  // attach
+  $(".guildChatTab").on("click", guildChatTabHandler);
+
+  function playerChatBarHandler(event)
+  {
+      var chat_id = event.data.chat_id;
+
+      if($('#private_chat_content_'+chat_id).is(':visible')) {
+        $('.privateChatBar').show();
+      } else {
+        $('.privateChatBar').hide();
+        $('#chat_post_'+chat_id).toggle();
+      }
+      $('#private_chat_content_'+chat_id).toggle();
+      $('#private_chat_form_'+chat_id).toggle();
+      $('#private_chat_text_input_'+chat_id).focus();
+      scrollToBottom('#private_chat_content_'+chat_id);
+  }
+</script>
+		</div>
+
+		<div class="mainChatView" id='expandedGuildChat' style="background-image: url('https://castleagegame1-a.akamaihd.net/graphics/chat_bubble_bg.gif'); width:365px; height:306px;position:absolute; z-index:100; font-family: Verdana; text-align:left; display:none; margin: 5px 0 0 5px;">
+			<div class='chatNotificationCount' style='text-align:center; font-weight:bold;padding:3px 16px 0 9px; width:26px; height:25px; cursor:pointer;' onclick='$(".mainChatView").hide();'>
+
+			</div>
+			<div id='chatHeader' style='padding-top:0px; height:35px; padding-bottom:2px;font-weight:bold;'>
+				<div style='float:left; width:130px;'>
+											<div style='float:left;padding: 8px 0 0 10px;'>
+							<img style='height:25px; width:25px;' src="https://castleagegame1-a.akamaihd.net/graphics/guild_symbol_160_10.gif"/>
+						</div>
+						<div style='float:left;color:white; font-weight:bold; font-size:11px;padding:10px 0 0 5px;'>
+							Guild Chat <span id='guildChatActiveMembers'></span>
+						</div>
+										<div style='clear:both;'></div>
+				</div>
+
+				<div style='padding:7px 0 0 140px;'>
+		            <div id="main_wall_icon_tab"
+		            	 style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_wall_off.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;text-align:center;cursor:pointer;' 
+		                 onMouseOut="hideItemPopup('wall_chat_hover_info',event);return false;"
+		                 onMouseOver="showItemPopup('wall_chat_hover_info', this, 43, 10);return false;"
+		                >
+		                <script>
+		                	$( "#main_wall_icon_tab" ).click(function() {
+		                		var posting = caPost('wall_chat_log_view.php', {});
+		                 		posting.done(function( data ) {
+		                 		 	$('#wallAndChatSection').html( data );
+		                 		 	$('#expandedGuildChat').toggle();
+		                 		 	$('#wallAndChatSection').toggle();
+		                 		});
+		                	});
+		                </script>
+		                <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+		                    <div style='width:20px;text-align:center;'>
+		                        1		                    </div>
+		                </div>
+		            </div>
+
+		            <div id="main_chat_icon_tab" 
+		            	 style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_chat_off.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;cursor:pointer;text-align:center;' 
+		                 onMouseOut="hideItemPopup('player_chat_hover_info',event);return false;"
+		                 onMouseOver="showItemPopup('player_chat_hover_info', this, 43, 10);return false;"
+		                >
+		                <script>
+		                	$( "#main_chat_icon_tab" ).click(function() {
+		                		var posting = caPost('wall_chat_log_view.php', {mainChatTab:'2'});
+		                 		posting.done(function( data ) {
+		                 		 	$('#wallAndChatSection').html( data );
+		                 		 	$('#expandedGuildChat').toggle();
+		                 		 	$('#wallAndChatSection').toggle();
+		                 		});
+		                	});
+		                </script>
+		                <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+		                    <div style='width:20px;text-align:center;'>
+		                        1		                    </div>
+		                </div>
+		            </div>
+
+		            <div style='background-image: url("https://castleagegame1-a.akamaihd.net/graphics/chat_icon_guild_on.gif");background-repeat:no-repeat;float:left;height:25px;width:70px;text-align:center;' 
+		                 onMouseOut="hideItemPopup('player_chat_hover_info',event);return false;"
+		                 onMouseOver="showItemPopup('player_chat_hover_info', this, 43, 10);return false;"
+		                >
+		                <div style='padding:5px 0 0 40px;color:#00fc65;font-size:12px;'>
+		                    <div class="chatNotificationCount" style='width:20px;text-align:center;'>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+
+				<div style='clear:both;'></div>
+			</div>
+
+			<div id='chatGuildChat' style='text-align:left; color:white;padding: 0px 10px; font-size:12px; overflow-y:auto;height:200px;width:340px;'>
+				<div id='chatGuildChatContainer'>
+					
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>RR. </span> (2d): Welcome new acc. We are glad to have you all here. 								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>RR. </span> (2d): I'm going to lose on purpose to Zvil, and then I can take him by ww								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>😄</span> (2d): I can't get in battle I'm only on web3								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Penella</span> (2d): under web3, the ios battle is under Guild -> Festival Battle								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>JJ</span> (2d): We win! Top points: Penella, Tied for 2nd: Beavis and Athena!								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Joshua {HØD}</span> (2d): Victory! Penella get 1st for most points, Athena and Beavis tied for 2nd! Great job everyone!								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Athena</span> (2d): That was a close one								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Skull crunch</span> (2d): Ok so can anyone give me advice on the best way to score powders(red and green mostly) so that I can create potions for leveling my heros?								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Beavis</span> (2d): Welcome new members! When u get a chance post up ur codes so that I can add u to my army or my code is 1547b6. Good to have u on board								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>😄</span> (2d): 2EDF62								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Athena</span> (2d): B90A1E								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Juliette</span> (1d): I'm Joshua (3EE586), JJ (8D58C7), Juliette (8FFA81), and Penella (2E8EB6)								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>VMAN</span> (1d): We still have 45 hours before our 4th land battles again.  Top is only 10 hours left until battle add the 24 hrs for battle and that means 34 hrs total.  We can have more defend there and then jump back into 4th land afterwards.  :-)								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Penella</span> (1d): I'm not going to lie - we are screwed on this battle...								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Ronin</span> (1d): Yeah we've fought them before. It's alpha pain:(								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Beavis</span> (1d): Wow. That was painful. Second fastest beating we've ever took since I've been here. Only one other guild completely wiped us out. Tomorrow is three more battles gotta do better. 								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Penella</span> (1d): But Beavis, you got the most BP out of all of us in that one. What is your secret?								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Beavis</span> (1d): No secret that I know of. Hulk smash. Find a puny god or three in a row and whirlwind till they kill me off. Then try to find a 1,000 point guy I can chip away at for 50-75 points till time runs out. 								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Skylines</span> (1d): The only way to get powders is on the given day. Check out daily bonuses to see which day they fall on.								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Skull Snap</span> (1d): Thanks sky, I'll look at the daily bonus area and go for it. 								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Armin</span> (1d): Daily bonus area? Where is that?								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Juliette</span> (1d): Awesome! Who killed Vincent?								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Joshua {HØD}</span> (1d): Woot! Rolled the Exsanguinator!								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Juliette</span> (1d): :( I didn't. My fourth one (I think) and still no sword.								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Juliette</span> (1d): On to the Kraken!								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Charlie</span> (1d): my guys finished him off just now! my first time fighting him, cause i usually just play on ios. he was fun.								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Charlie</span> (1d): daily bonus is under home tab								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Joshua {HØD}</span> (1d): Killing "Wrath" just because all my other guys couldn't MU HA HA								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Joshua {HØD}</span> (1d): Hulk smash again, Beavis!								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Penella</span> (1d): Just launched the catapults on the Cronus - y'all can re-siege now								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Beavis</span> (1d): Don't mess w what works fer ya I guess. Couple of yours weren't far behind. 								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Murie</span> (1d): Can someone re-feature the kraken? Sorry 😢								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Joshua {HØD}</span> (1d): Only one of their clerics is active. Unfortunately he is lvl 605. But we will win if we stun as many as possible. He can't rez them all.								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Joshua {HØD}</span> (20h): Activity count on other team: 0!								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Joshua {HØD}</span> (20h): I don't feel guilty for beating "Your mum" - she's a lvl 232 cleric!								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Beavis</span> (18h): T1 pride is squishy								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Joshua {HØD}</span> (18h): Wrath is too. I'm guessing all the deadly sins have a low BSI								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Beavis</span> (18h): Yep. I beat a lvl 271 and a couple 250+ not bad for a lvl 135								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Beavis</span> (18h): I think I get a little extra on points cause I have to go over my level a lot and win. That was the most points and guild coins I've ever got. 								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Joshua {HØD}</span> (18h): what are you saving up for?								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Joshua {HØD}</span> (18h): I'm pretty close to getting confuse								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Beavis</span> (17h): Next is confidence for my new third slot. Then I need to look a bit more and decide if the whirlwind acc r worth buying into or just level my whirlwind some more								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Skylines</span> (12h): I'm running cleric today if anyone wants to join me and Murie 								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Beavis</span> (10h): I'll run w ya. Let's c what happens!								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Scorpious</span> (8h): Scorp is still cleric, I can switch VMAN over as well								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>VMAN</span> (8h): Going to make LL&P a warrior this battle.								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>JJ</span> (8h): You are all topped out Beavis - keep smashing								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Beavis</span> (7h): Well I got the crazy notion to try and run as cleric w everybody. Wrong battle to pick to show up as Bruce Banner. I'm definitely not accomplishing any smashing this round. Keep LongLive alive. Hulk smash next fight. 								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Penella</span> (6h): lol Bruce Banner								</div>
+							
+								<div style="padding-top:3px;" >
+									<span style='color:#ffc100;'>Skylines</span> (3h): I'm going cleric again. Didn't partake in first battlw								</div>
+											</div>
+			</div>
+			<div id='chatGuildChatTextBox' style='padding:0px;'>
+									<div style='padding:0px;'>
+						<div style="float:left; width:280px; margin:15px 0 0 10px;">
+							<input onkeypress="guildChatHandleKeyPress(event)" id="chatGuildChatTextInput" type="text" style="width:345px;height:18px;background-color:black;color:white;border:none;" />
+						</div>
+						<div style="clear:both"></div>
+					</div>
+							</div>
+		</div>
+			<div style="padding-left:65px;">
+            	<div style="float:left;">
+					
+            	    <div class="mainMenu" style="padding-top:5px;">
+	<ul>
+			<li
+		     onMouseOut="hideList('mainMenu_home');return false;" 
+		     onMouseOver="showList('mainMenu_home');return false;"
+		><a id='main_menu_home' href="index.php" onclick="ajaxLinkSend('globalContainer', 'index.php'); return false;" ></a>
+						<ul id='mainMenu_home' style="display:none">
+									
+										<li>
+						<a href="index.php" onclick="ajaxLinkSend('globalContainer', 'index.php'); return false;" style='color:#00fafd'>
+							Main						</a>
+					</li>
+														
+										<li>
+						<a href="army_news_feed.php" onclick="ajaxLinkSend('globalContainer', 'army_news_feed.php'); return false;" style='color:#00fafd'>
+							News Feeds						</a>
+					</li>
+														
+										<li>
+						<a href="crusaders.php" onclick="ajaxLinkSend('globalContainer', 'crusaders.php'); return false;" style='color:#00fafd'>
+							Crusaders						</a>
+					</li>
+														
+										<li>
+						<a href="daily_bonus_list.php" onclick="ajaxLinkSend('globalContainer', 'daily_bonus_list.php'); return false;" style='color:#00fafd'>
+							Daily Bonus						</a>
+					</li>
+													<div class='bottom'>&nbsp;</div>
+			</ul>
+					</li>
+			<li
+		     onMouseOut="hideList('mainMenu_quest');return false;" 
+		     onMouseOver="showList('mainMenu_quest');return false;"
+		><a id='main_menu_quest' href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;" ></a>
+						<ul id='mainMenu_quest' style="display:none">
+									
+										<li>
+						<a href="quests.php" onclick="ajaxLinkSend('globalContainer', 'quests.php'); return false;" style='color:#00fafd'>
+							Quest						</a>
+					</li>
+														
+										<li>
+						<a href="symbolquests.php" onclick="ajaxLinkSend('globalContainer', 'symbolquests.php'); return false;" style='color:#00fafd'>
+							Demi Quest						</a>
+					</li>
+														
+										<li>
+						<a href="monster_quests.php" onclick="ajaxLinkSend('globalContainer', 'monster_quests.php'); return false;" style='color:#00fafd'>
+							Atlantis						</a>
+					</li>
+														
+										<li>
+						<a href="festival_home.php" onclick="ajaxLinkSend('globalContainer', 'festival_home.php'); return false;" style='color:#00fafd'>
+							Festival						</a>
+					</li>
+													<div class='bottom'>&nbsp;</div>
+			</ul>
+					</li>
+			<li
+		     onMouseOut="hideList('mainMenu_battle');return false;" 
+		     onMouseOver="showList('mainMenu_battle');return false;"
+		><a id='main_menu_battle' href="battle.php" onclick="ajaxLinkSend('globalContainer', 'battle.php'); return false;" ></a>
+						<ul id='mainMenu_battle' style="display:none">
+									
+										<li>
+						<a href="battle.php" onclick="ajaxLinkSend('globalContainer', 'battle.php'); return false;" style='color:#00fafd'>
+							Battle						</a>
+					</li>
+														
+										<li>
+						<a href="dominion_enter.php" onclick="ajaxLinkSend('globalContainer', 'dominion_enter.php'); return false;" style='color:#00fafd'>
+							Dominion						</a>
+					</li>
+														
+										<li>
+						<a href="arena.php" onclick="ajaxLinkSend('globalContainer', 'arena.php'); return false;" style='color:#00fafd'>
+							Arena VIII						</a>
+					</li>
+														
+										<li>
+						<a href="conquest_duel.php" onclick="ajaxLinkSend('globalContainer', 'conquest_duel.php'); return false;" style='color:#00fafd'>
+							Conquest Duel						</a>
+					</li>
+														
+										<li>
+						<a href="festival_duel_home.php" onclick="ajaxLinkSend('globalContainer', 'festival_duel_home.php'); return false;" style='color:#00fafd'>
+							Duel Champion						</a>
+					</li>
+														
+										<li>
+						<a href="battlerank.php" onclick="ajaxLinkSend('globalContainer', 'battlerank.php'); return false;" style='color:#00fafd'>
+							Battle Rank						</a>
+					</li>
+														
+										<li>
+						<a href="war_rank.php" onclick="ajaxLinkSend('globalContainer', 'war_rank.php'); return false;" style='color:#00fafd'>
+							War Rank						</a>
+					</li>
+														
+										<li>
+						<a href="conquest_battlerank.php" onclick="ajaxLinkSend('globalContainer', 'conquest_battlerank.php'); return false;" style='color:#00fafd'>
+							Conquest Rank						</a>
+					</li>
+													<div class='bottom'>&nbsp;</div>
+			</ul>
+					</li>
+			<li
+		     onMouseOut="hideList('mainMenu_monster');return false;" 
+		     onMouseOver="showList('mainMenu_monster');return false;"
+		><a id='main_menu_monster' href="player_monster_list.php" onclick="ajaxLinkSend('globalContainer', 'player_monster_list.php'); return false;" ></a>
+						<ul id='mainMenu_monster' style="display:none">
+									
+										<li>
+						<a href="player_monster_list.php" onclick="ajaxLinkSend('globalContainer', 'player_monster_list.php'); return false;" style='color:#00fafd'>
+							Monster List						</a>
+					</li>
+														
+										<li>
+						<a href="public_monster_list.php?monster_tier=3" onclick="ajaxLinkSend('globalContainer', 'public_monster_list.php?monster_tier=3'); return false;" style='color:#00fafd'>
+							Public List						</a>
+					</li>
+														
+										<li>
+						<a href="monster_summon_list.php" onclick="ajaxLinkSend('globalContainer', 'monster_summon_list.php'); return false;" style='color:#00fafd'>
+							Summon						</a>
+					</li>
+														
+										<li>
+						<a href="army_news_feed.php" onclick="ajaxLinkSend('globalContainer', 'army_news_feed.php'); return false;" style='color:#00fafd'>
+							Live Feed						</a>
+					</li>
+														
+										<li>
+						<a href="festival_tower.php" onclick="ajaxLinkSend('globalContainer', 'festival_tower.php'); return false;" style='color:#00fafd'>
+							Tower I						</a>
+					</li>
+														
+										<li>
+						<a href="festival_tower2.php" onclick="ajaxLinkSend('globalContainer', 'festival_tower2.php'); return false;" style='color:#00fafd'>
+							Tower II						</a>
+					</li>
+														
+										<li>
+						<a href="guildv2_current_monster_battles.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_current_monster_battles.php'); return false;" style='color:#00fafd'>
+							Guild Monster						</a>
+					</li>
+													<div class='bottom'>&nbsp;</div>
+			</ul>
+					</li>
+			<li
+		     onMouseOut="hideList('mainMenu_heroes');return false;" 
+		     onMouseOver="showList('mainMenu_heroes');return false;"
+		><a id='main_menu_heroes' href="generals.php" onclick="ajaxLinkSend('globalContainer', 'generals.php'); return false;" ></a>
+						<ul id='mainMenu_heroes' style="display:none">
+									
+										<li>
+						<a href="mercenary.php" onclick="ajaxLinkSend('globalContainer', 'mercenary.php'); return false;" style='color:#00fafd'>
+							Heroes						</a>
+					</li>
+														
+										<li>
+						<a href="generals.php" onclick="ajaxLinkSend('globalContainer', 'generals.php'); return false;" style='color:#00fafd'>
+							Generals						</a>
+					</li>
+														
+										<li>
+						<a href="general_alliance.php" onclick="ajaxLinkSend('globalContainer', 'general_alliance.php'); return false;" style='color:#00fafd'>
+							General Alliance						</a>
+					</li>
+													<div class='bottom'>&nbsp;</div>
+			</ul>
+					</li>
+			<li
+		     onMouseOut="hideList('mainMenu_town');return false;" 
+		     onMouseOver="showList('mainMenu_town');return false;"
+		><a id='main_menu_town' href="soldiers.php" onclick="ajaxLinkSend('globalContainer', 'soldiers.php'); return false;" ></a>
+						<ul id='mainMenu_town' style="display:none">
+									
+										<li>
+						<a href="trade_market.php" onclick="ajaxLinkSend('globalContainer', 'trade_market.php'); return false;" style='color:#00fafd'>
+							Trade Market						</a>
+					</li>
+														
+										<li>
+						<a href="soldiers.php" onclick="ajaxLinkSend('globalContainer', 'soldiers.php'); return false;" style='color:#00fafd'>
+							Soldiers						</a>
+					</li>
+														
+										<li>
+						<a href="item.php" onclick="ajaxLinkSend('globalContainer', 'item.php'); return false;" style='color:#00fafd'>
+							Black Smith						</a>
+					</li>
+														
+										<li>
+						<a href="magic.php" onclick="ajaxLinkSend('globalContainer', 'magic.php'); return false;" style='color:#00fafd'>
+							Magic						</a>
+					</li>
+														
+										<li>
+						<a href="land.php" onclick="ajaxLinkSend('globalContainer', 'land.php'); return false;" style='color:#00fafd'>
+							Land						</a>
+					</li>
+														
+										<li>
+						<a href="conquest_path_shop.php" onclick="ajaxLinkSend('globalContainer', 'conquest_path_shop.php'); return false;" style='color:#00fafd'>
+							Emporium						</a>
+					</li>
+													<div class='bottom'>&nbsp;</div>
+			</ul>
+					</li>
+			<li
+		     onMouseOut="hideList('mainMenu_oracle');return false;" 
+		     onMouseOver="showList('mainMenu_oracle');return false;"
+		><a id='main_menu_oracle' href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" ></a>
+						<ul id='mainMenu_oracle' style="display:none">
+									
+										<li>
+						<a href="oracle.php" onclick="ajaxLinkSend('globalContainer', 'oracle.php'); return false;" style='color:#00fafd'>
+							Oracle						</a>
+					</li>
+														
+										<li>
+						<a href="monthly_generals.php" onclick="ajaxLinkSend('globalContainer', 'monthly_generals.php'); return false;" style='color:#00fafd'>
+							Favor Generals						</a>
+					</li>
+														
+										<li>
+						<a href="reinforcements.php" onclick="ajaxLinkSend('globalContainer', 'reinforcements.php'); return false;" style='color:#00fafd'>
+							Reinforcements						</a>
+					</li>
+														
+										<li>
+						<a href="symbols.php" onclick="ajaxLinkSend('globalContainer', 'symbols.php'); return false;" style='color:#00fafd'>
+							Demi-Power						</a>
+					</li>
+														
+										<li>
+						<a href="treasure_chest.php" onclick="ajaxLinkSend('globalContainer', 'treasure_chest.php'); return false;" style='color:#00fafd'>
+							Chest						</a>
+					</li>
+													<div class='bottom'>&nbsp;</div>
+			</ul>
+					</li>
+			<li
+		     onMouseOut="hideList('mainMenu_keep');return false;" 
+		     onMouseOver="showList('mainMenu_keep');return false;"
+		><a id='main_menu_keep' href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" ></a>
+						<ul id='mainMenu_keep' style="display:none">
+									
+										<li>
+						<a href="keep.php" onclick="ajaxLinkSend('globalContainer', 'keep.php'); return false;" style='color:#00fafd'>
+							Stats						</a>
+					</li>
+														
+										<li>
+						<a href="guild_class_power_equipment.php" onclick="ajaxLinkSend('globalContainer', 'guild_class_power_equipment.php'); return false;" style='color:#00fafd'>
+							Class						</a>
+					</li>
+														
+										<li>
+						<a href="item_archive_bonus.php" onclick="ajaxLinkSend('globalContainer', 'item_archive_bonus.php'); return false;" style='color:#00fafd'>
+							Item Archives						</a>
+					</li>
+														
+										<li>
+						<a href="item_equip.php" onclick="ajaxLinkSend('globalContainer', 'item_equip.php'); return false;" style='color:#00fafd'>
+							Equipment						</a>
+					</li>
+														
+										<li>
+						<a href="player_loadouts.php" onclick="ajaxLinkSend('globalContainer', 'player_loadouts.php'); return false;" style='color:#00fafd'>
+							Loadouts						</a>
+					</li>
+														
+										<li>
+						<a href="alchemy.php" onclick="ajaxLinkSend('globalContainer', 'alchemy.php'); return false;" style='color:#00fafd'>
+							Alchemy						</a>
+					</li>
+														
+										<li>
+						<a href="goblin_emp.php" onclick="ajaxLinkSend('globalContainer', 'goblin_emp.php'); return false;" style='color:#00fafd'>
+							Kobo						</a>
+					</li>
+														
+										<li>
+						<a href="forge_item_power.php" onclick="ajaxLinkSend('globalContainer', 'forge_item_power.php'); return false;" style='color:#00fafd'>
+							Forge						</a>
+					</li>
+														
+										<li>
+						<a href="achievements.php" onclick="ajaxLinkSend('globalContainer', 'achievements.php'); return false;" style='color:#00fafd'>
+							Achievements						</a>
+					</li>
+														
+										<li>
+						<a href="gift.php" onclick="ajaxLinkSend('globalContainer', 'gift.php'); return false;" style='color:#00fafd'>
+							Gift						</a>
+					</li>
+														
+										<li>
+						<a href="army.php" onclick="ajaxLinkSend('globalContainer', 'army.php'); return false;" style='color:#00fafd'>
+							Army						</a>
+					</li>
+													<div class='bottom'>&nbsp;</div>
+			</ul>
+					</li>
+			<li
+		     onMouseOut="hideList('mainMenu_guild');return false;" 
+		     onMouseOver="showList('mainMenu_guild');return false;"
+		><a id='main_menu_guild' href="guildv2_home.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_home.php'); return false;" ></a>
+						<ul id='mainMenu_guild' style="display:none">
+									
+										<li>
+						<a href="guildv2_home.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_home.php'); return false;" style='color:#00fafd'>
+							Home						</a>
+					</li>
+														
+										<li>
+						<a href="guildv2_panel.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_panel.php'); return false;" style='color:#00fafd'>
+							Manage						</a>
+					</li>
+														
+										<li>
+						<a href="guildv2_list.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_list.php'); return false;" style='color:#00fafd'>
+							Guild List						</a>
+					</li>
+														
+										<li>
+						<a href="guildv2_battle.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_battle.php'); return false;" style='color:#00fafd'>
+							Guild Battle						</a>
+					</li>
+														
+										<li>
+						<a href="guildv2_monster_summon_list.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_monster_summon_list.php'); return false;" style='color:#00fafd'>
+							Guild Monster						</a>
+					</li>
+														
+										<li>
+						<a href="guild_priority_mlist.php" onclick="ajaxLinkSend('globalContainer', 'guild_priority_mlist.php'); return false;" style='color:#00fafd'>
+							Priority Monster						</a>
+					</li>
+														
+										<li>
+						<a href="festival_battle_home.php" onclick="ajaxLinkSend('globalContainer', 'festival_battle_home.php'); return false;" style='color:#00fafd'>
+							Festival Battle						</a>
+					</li>
+														
+										<li>
+						<a href="guildv2_conquest_command.php?tier=3" onclick="ajaxLinkSend('globalContainer', 'guildv2_conquest_command.php?tier=3'); return false;" style='color:#00fafd'>
+							Conquest: Mist						</a>
+					</li>
+														
+										<li>
+						<a href="guild_conquest_castle.php?tier=5" onclick="ajaxLinkSend('globalContainer', 'guild_conquest_castle.php?tier=5'); return false;" style='color:#00fafd'>
+							Conquest: Earth						</a>
+					</li>
+														
+										<li>
+						<a href="guild_achievements.php" onclick="ajaxLinkSend('globalContainer', 'guild_achievements.php'); return false;" style='color:#00fafd'>
+							Achievements						</a>
+					</li>
+													<div class='bottom'>&nbsp;</div>
+			</ul>
+					</li>
+		</ul>
+</div>            	</div>
+            </div>
+        </div>
+
+	<div id="app_body">
+		<table class="layout" cellspacing="0" cellpadding="0"><tr><td>
+	<div id="results_container" class="results_container" style="display:none"> </div>
+	<div id="results_main_wrapper">
+        	</div>
+ 		<div style='display:none;' id="web3_coming_soon">
+				<div style="padding:390px 0 0 125px;">
+    		<div style="float:left;width:500px;height:390px;">
+    			<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/helpmenu_top.jpg');width:500px;height:60px;">
+    			    <div style="padding:15px 0 0 36px;">
+        			    <div style="float:left;width:395px;height:25px;text-align:center;overflow:hidden;">
+            			    <div style="clear:both"></div>
+            			    <div style="color:white;font-size:18px;">COMING SOON</div>
+            			    <div style="clear:both"></div>
+            			</div>
+            			<div style="padding:3px 15px 0 0">
+                			<div style="float:right">
+                			    		<div style='text-align:right;'>
+	        <a href="#" onclick="hidePositionBox(); return false;">		
+	            <img  src="https://castleagegame1-a.akamaihd.net/graphics/popup_close_button.png" />
+	        </a>
+        </div>
+                        			</div>
+                		</div>
+            		</div>
+    			</div>
+			
+    			<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/helpmenu_middle.jpg');width:500px;height:300px;">
+    			    <div style="padding:0 0 0 15px;">
+                        <div style="float:left;width:470px;height:300px;text-align:left;overflow-y:auto;">
+                            <div style="clear:both"></div>
+                            <div style="color:black;font-size:16px;font-family:Times New Roman;"><div style="padding:10px;">This feature is coming soon!</div></div>
+            			    <div style="clear:both"></div>
+            			</div>
+        			</div>
+    			</div>
+            
+                <div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/helpmenu_bottom.jpg');width:500px;height:30px;overflow:hidden;" ></div>
+    		</div>
+    	</div>
+		</div>
+<div style="width:740px;">
+	<div style="clear:both"></div>
+						<div style="float:left;padding: 0 5px 0 0px">
+				<a href="guildv2_home.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_home.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/guild_tab1.jpg" /></a>			</div>
+
+							<div style="float:left;padding: 0 5px 0 0">
+					<a href="guildv2_panel.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_panel.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/guild_tab2.jpg" /></a>				</div>
+						
+	<div style="float:left;padding: 0 5px 0 0">
+		<a href="guildv2_list.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_list.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/guild_tab3.jpg" /></a>	</div>
+	
+			<div style="float:left;padding: 0 5px 0 0">
+			<a href="guildv2_battle.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_battle.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/guild_tab4_on.jpg" /></a>		</div>
+		<div style="float:left;padding: 0 0 0 0">
+    		<a href="guildv2_conquest_command.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_conquest_command.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/guild_tab6.jpg" /></a>    	</div>
+    	<div style="float:left;padding: 0 0 0 5px">
+    		<a href="guild_achievements.php" onclick="ajaxLinkSend('globalContainer', 'guild_achievements.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/achievement_tab_off.jpg" /></a>    	</div>
+		<div style="clear:both"></div>
+</div>
+
+<div id="guildv2_formation_top" style="width:740px;height:221px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_battle_top.jpg');background-repeat:no-repeat;">
+        <table>
+        <tr>
+            <td>
+                <div style="padding:25px 0 0 48px;">
+                    <div style='float:left; width:105px;height:110px;'>
+                		                				<img src="https://castleagegame1-a.akamaihd.net/graphics/guild_symbol_banner_10_left.jpg"
+                				     width="105"
+                				     height="110"
+                				/>
+                			                	</div>
+            	</div>
+        	</td>
+            <td>
+                <div style="padding:100px 0 0 53px;">
+                    <div style="float:left;width:305px;height:40px;color:white;text-align:center;font-size:24px;">
+						Scary fury                    </div>
+                </div>
+            </td>
+            <td>
+                <div style="padding:25px 0 0 69px;">
+                    <div style='float:left;width:105px;height:110px;'>
+            			            					<img src="https://castleagegame1-a.akamaihd.net/graphics/guild_symbol_banner_10_right.jpg"
+            					     width="105"
+                				     height="110"
+            					/>
+            				                	</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div style='clear:both;'></div>
+
+	<div id="guildv2_battle_nav" style="padding:0 0 0 0;">
+		<div style="float:left;width:570px;height:35px;">
+
+			<div style="padding:9px 0 0 185px;float:left">
+				<div style="width:179px;height:35px;">
+					<img src="https://castleagegame1-a.akamaihd.net/graphics/guild_battle_battle_on.jpg" />
+				</div>
+			</div>
+
+			<div class="imgButton" style="padding:9px 0 0 12px;float:left;">
+				<div style="width:179px;height:35px;">
+					<a href="guildv2_current_monster_battles.php" onclick="ajaxLinkSend('globalContainer', 'guildv2_current_monster_battles.php'); return false;" ><img src="https://castleagegame1-a.akamaihd.net/graphics/guild_battle_monster_off.jpg" /></a>				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="guildv2_battle_middle" style="width:741px;height:220px;background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_battle_container.jpg');background-repeat:no-repeat;position:relative;left:-1px;">
+        <div style="padding:42px 0 0 60px;">
+            <div style="float:left; width:445px; height:125px; color:black; font-size:14px; margin-top:8px;">
+                <b>No Current Auto-Match Battles, have your Guild Master and Guild Officers submit the Guild for Auto-Matching!</b>
+                <div style="padding:47px 0 0 8px;">
+                    <div style="float:left;width:445px;height:25px;color:white;font-size:14px;">
+                        <b>Start Auto-Match</b>
+                    </div>
+                </div>
+            </div>
+
+			<div style="float:left; width:164px; height:124px; margin-left: 15px; _margin-left: 8px;">
+				<img src="https://castleagegame1-a.akamaihd.net/graphics/guild_battle_locked.gif">
+			</div>
+		</div>
+	    <div style='clear:both;'></div>
+</div>
+
+<style type="text/css">
+	#guildv2_formation_middle {width: 740px; padding: 0 25px 0 25px; background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_manage_backgroundrepeatablev2.jpg'); background-repeat:repeat-y;}
+	#guildv2_formation_middle .hovered {background: #666666;}
+	#guildv2_formation_middle .tower {background-image: url('https://castleagegame1-a.akamaihd.net/graphics/sort_container.gif'); background-repeat: no-repeat; width: 173px; height: 902px; float: left; padding-top: 5px;_padding-bottom: 32px;}
+	#guildv2_formation_middle .towerslot {width: 165px; height: 34px; padding: 0 4px 1px 4px; _padding-bottom: 0px;}
+	#guildv2_formation_middle .player {background-image: url('https://castleagegame1-a.akamaihd.net/graphics/sort_players.jpg'); width: 165px; height: 34px;}
+	#guildv2_formation_middle .player_name {color: #999999; font-size: 11px; text-align: center; padding-top: 2px; font-family: Verdana; line-height: 11px;}
+	#guildv2_formation_middle .player_level {color: #FFFFFF; font-size: 10px; text-align: center; font-family: Verdana; line-height: 10px; margin-top: 2px;}
+	#guildv2_formation_middle .player.slot_selected .player_name{color: #FFF785;}
+	#guildv2_formation_middle .player.slot_selected .player_level {color: #FFF785;}
+	#guildv2_formation_middle .towerslot .pinicon {background-image: url('https://castleagegame1-a.akamaihd.net/graphics/sort_pinicon.gif'); background-repeat: no-repeat; margin: 2px 0 0 4px; cursor: pointer;}
+	#guildv2_formation_middle .towerslot.unpinned .pinicon {background-image: none;}
+	#guildv2_formation_middle .towerslot.unpinned .player {cursor: move;}
+	#guildv2_formation_middle .towerslot.unpinned .player.locked {cursor: default; background-image: url('https://castleagegame1-a.akamaihd.net/graphics/sort_players_locked.jpg');}
+	#guildv2_formation_middle .gate_label {width: 170px; text-align: center; height: 20px; font-family: Verdana; color: #FFF785; font-size: 11px;}
+	#guildv2_formation_middle .instructions {width: 690px; text-align: center; font-size: 11px; color: #FFFFFF; font-weight: bold; padding: 5px 0 25px 0;}
+</style>
+
+<script type="text/javascript">
+	var bGatesLocked = false;
+	var last_selected_slot = null;
+	var total_towers = 4;
+	var tower_size = 25;
+	var is_mobile = false;
+
+	function initTowerSlots() {
+		for (var j=0; j<total_towers; j++) {
+			for (var i=0; i<tower_size; i++) {
+				var slot_number = (j * tower_size + i);
+				$('<div class="towerslot" id="slot'+slot_number+'" ></div>').data('slot', slot_number).appendTo('#tower'+j);
+			}
+		}
+
+		if (!is_mobile) {
+			$('.towerslot').droppable( {
+				accept: '.player',
+				hoverClass: 'hovered',
+				drop: handlePlayerDrop
+			} );
+		}
+		$('#slot0').append(
+			"<div id=\"player0\" class=\"player\" key=\"400000031802980\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Sirslayer\">Sirslayer</div>"
+				+"        <div class=\"player_level\">Level: 332</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player0');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player0').data('current_slot', 0);
+		$('#slot1').append(
+			"<div id=\"player1\" class=\"player\" key=\"400000030162650\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Peter\">Peter</div>"
+				+"        <div class=\"player_level\">Level: 29</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player1');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player1').data('current_slot', 1);
+		$('#slot2').append(
+			"<div id=\"player2\" class=\"player\" key=\"400000034801340\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Angel\">Angel</div>"
+				+"        <div class=\"player_level\">Level: 122</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player2');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player2').data('current_slot', 2);
+		$('#slot3').append(
+			"<div id=\"player3\" class=\"player\" key=\"100007269840477\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"DreadMonsterTamer\">DreadMonst...</div>"
+				+"        <div class=\"player_level\">Level: 74</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player3');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player3').data('current_slot', 3);
+		$('#slot4').append(
+			"<div id=\"player4\" class=\"player\" key=\"500000000708140\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Rooogh\">Rooogh</div>"
+				+"        <div class=\"player_level\">Level: 253</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player4');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player4').data('current_slot', 4);
+		$('#slot5').append(
+			"<div id=\"player5\" class=\"player\" key=\"400000026785710\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Valleria\">Valleria</div>"
+				+"        <div class=\"player_level\">Level: 325</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player5');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player5').data('current_slot', 5);
+		$('#slot6').append(
+			"<div id=\"player6\" class=\"player\" key=\"100001176285650\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Sirslayer11\">Sirslayer1...</div>"
+				+"        <div class=\"player_level\">Level: 203</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player6');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player6').data('current_slot', 6);
+		$('#slot7').append(
+			"<div id=\"player7\" class=\"player\" key=\"400000037512700\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Zaros\">Zaros</div>"
+				+"        <div class=\"player_level\">Level: 223</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player7');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player7').data('current_slot', 7);
+		$('#slot8').append(
+			"<div id=\"player8\" class=\"player\" key=\"500000000859160\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Mike Hancho\">Mike Hanch...</div>"
+				+"        <div class=\"player_level\">Level: 225</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player8');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player8').data('current_slot', 8);
+		$('#slot9').append(
+			"<div id=\"player9\" class=\"player\" key=\"400000035906600\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Draago\">Draago</div>"
+				+"        <div class=\"player_level\">Level: 66</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player9');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player9').data('current_slot', 9);
+		$('#slot10').append(
+			"<div id=\"player10\" class=\"player\" key=\"500000001176590\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"JayHawg75\">JayHawg75</div>"
+				+"        <div class=\"player_level\">Level: 160</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player10');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player10').data('current_slot', 10);
+		$('#slot11').append(
+			"<div id=\"player11\" class=\"player\" key=\"100001645877598\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"13th_Warrior\">13th_Warri...</div>"
+				+"        <div class=\"player_level\">Level: 187</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player11');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player11').data('current_slot', 11);
+		$('#slot12').append(
+			"<div id=\"player12\" class=\"player\" key=\"500000001515470\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"LiveLongandProsper\">LiveLongan...</div>"
+				+"        <div class=\"player_level\">Level: 160</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player12');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player12').data('current_slot', 12);
+		$('#slot13').append(
+			"<div id=\"player13\" class=\"player\" key=\"100006845713541\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Maverick\">Maverick</div>"
+				+"        <div class=\"player_level\">Level: 170</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player13');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player13').data('current_slot', 13);
+		$('#slot14').append(
+			"<div id=\"player14\" class=\"player\" key=\"500000001861710\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Grimmjaw\">Grimmjaw</div>"
+				+"        <div class=\"player_level\">Level: 119</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player14');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player14').data('current_slot', 14);
+		$('#slot15').append(
+			"<div id=\"player15\" class=\"player\" key=\"500000000967900\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Zeus\">Zeus</div>"
+				+"        <div class=\"player_level\">Level: 76</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player15');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player15').data('current_slot', 15);
+		$('#slot16').append(
+			"<div id=\"player16\" class=\"player\" key=\"10741944\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Shawn\">Shawn</div>"
+				+"        <div class=\"player_level\">Level: 46</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player16');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player16').data('current_slot', 16);
+		$('#slot17').append(
+			"<div id=\"player17\" class=\"player\" key=\"500000001586610\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Pogue\">Pogue</div>"
+				+"        <div class=\"player_level\">Level: 55</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player17');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player17').data('current_slot', 17);
+		$('#slot18').append(
+			"<div id=\"player18\" class=\"player\" key=\"500000001599970\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Tricepsratops\">Tricepsrat...</div>"
+				+"        <div class=\"player_level\">Level: 52</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player18');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player18').data('current_slot', 18);
+		$('#slot19').append(
+			"<div id=\"player19\" class=\"player\" key=\"500000001828260\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Chadwick\">Chadwick</div>"
+				+"        <div class=\"player_level\">Level: 104</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player19');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player19').data('current_slot', 19);
+		$('#slot20').append(
+			"<div id=\"player20\" class=\"player\" key=\"400000037226950\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Antonio\">Antonio</div>"
+				+"        <div class=\"player_level\">Level: 84</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player20');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player20').data('current_slot', 20);
+		$('#slot21').append(
+			"<div id=\"player21\" class=\"player\" key=\"500000000181020\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Thementalist95\">Thementali...</div>"
+				+"        <div class=\"player_level\">Level: 99</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player21');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player21').data('current_slot', 21);
+		$('#slot22').append(
+			"<div id=\"player22\" class=\"player\" key=\"400000015081160\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Aoi\">Aoi</div>"
+				+"        <div class=\"player_level\">Level: 293</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player22');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player22').data('current_slot', 22);
+		$('#slot23').append(
+			"<div id=\"player23\" class=\"player\" key=\"100001183710683\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"❥καylα\">❥καylα</div>"
+				+"        <div class=\"player_level\">Level: 376</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player23');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player23').data('current_slot', 23);
+		$('#slot24').append(
+			"<div id=\"player24\" class=\"player\" key=\"400000026279420\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Skull crunch\">Skull crun...</div>"
+				+"        <div class=\"player_level\">Level: 328</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player24');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player24').data('current_slot', 24);
+		$('#slot25').append(
+			"<div id=\"player25\" class=\"player\" key=\"100001427769999\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Charlie\">Charlie</div>"
+				+"        <div class=\"player_level\">Level: 298</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player25');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player25').data('current_slot', 25);
+		$('#slot26').append(
+			"<div id=\"player26\" class=\"player\" key=\"400000027088430\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Murie\">Murie</div>"
+				+"        <div class=\"player_level\">Level: 351</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player26');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player26').data('current_slot', 26);
+		$('#slot27').append(
+			"<div id=\"player27\" class=\"player\" key=\"400000035170610\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Cuilean\">Cuilean</div>"
+				+"        <div class=\"player_level\">Level: 329</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player27');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player27').data('current_slot', 27);
+		$('#slot28').append(
+			"<div id=\"player28\" class=\"player\" key=\"400000024587200\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"VegasBomb\">VegasBomb</div>"
+				+"        <div class=\"player_level\">Level: 407</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player28');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player28').data('current_slot', 28);
+		$('#slot29').append(
+			"<div id=\"player29\" class=\"player\" key=\"100000611888700\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Victor\">Victor</div>"
+				+"        <div class=\"player_level\">Level: 405</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player29');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player29').data('current_slot', 29);
+		$('#slot30').append(
+			"<div id=\"player30\" class=\"player\" key=\"400000031207350\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"RR. \">RR. </div>"
+				+"        <div class=\"player_level\">Level: 306</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player30');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player30').data('current_slot', 30);
+		$('#slot31').append(
+			"<div id=\"player31\" class=\"player\" key=\"400000032811630\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Bredunar\">Bredunar</div>"
+				+"        <div class=\"player_level\">Level: 345</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player31');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player31').data('current_slot', 31);
+		$('#slot32').append(
+			"<div id=\"player32\" class=\"player\" key=\"757044085\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Skylines\">Skylines</div>"
+				+"        <div class=\"player_level\">Level: 283</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player32');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player32').data('current_slot', 32);
+		$('#slot33').append(
+			"<div id=\"player33\" class=\"player\" key=\"400000029252080\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"VMAN\">VMAN</div>"
+				+"        <div class=\"player_level\">Level: 307</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player33');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player33').data('current_slot', 33);
+		$('#slot34').append(
+			"<div id=\"player34\" class=\"player\" key=\"400000001645650\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Metalhead \">Metalhead </div>"
+				+"        <div class=\"player_level\">Level: 201</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player34');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player34').data('current_slot', 34);
+		$('#slot35').append(
+			"<div id=\"player35\" class=\"player\" key=\"400000031462380\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Dan\">Dan</div>"
+				+"        <div class=\"player_level\">Level: 240</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player35');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player35').data('current_slot', 35);
+		$('#slot36').append(
+			"<div id=\"player36\" class=\"player\" key=\"514449350\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Bailey\">Bailey</div>"
+				+"        <div class=\"player_level\">Level: 158</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player36');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player36').data('current_slot', 36);
+		$('#slot37').append(
+			"<div id=\"player37\" class=\"player\" key=\"400000032990300\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Brianna\">Brianna</div>"
+				+"        <div class=\"player_level\">Level: 280</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player37');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player37').data('current_slot', 37);
+		$('#slot38').append(
+			"<div id=\"player38\" class=\"player\" key=\"500000000575060\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Scorpious\">Scorpious</div>"
+				+"        <div class=\"player_level\">Level: 223</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player38');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player38').data('current_slot', 38);
+		$('#slot39').append(
+			"<div id=\"player39\" class=\"player\" key=\"400000033332190\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Donnchadha \">Donnchadha...</div>"
+				+"        <div class=\"player_level\">Level: 273</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player39');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player39').data('current_slot', 39);
+		$('#slot40').append(
+			"<div id=\"player40\" class=\"player\" key=\"400000033049630\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Warlord\">Warlord</div>"
+				+"        <div class=\"player_level\">Level: 290</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player40');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player40').data('current_slot', 40);
+		$('#slot41').append(
+			"<div id=\"player41\" class=\"player\" key=\"400000031016800\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"SierraRacs\">SierraRacs</div>"
+				+"        <div class=\"player_level\">Level: 241</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player41');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player41').data('current_slot', 41);
+		$('#slot42').append(
+			"<div id=\"player42\" class=\"player\" key=\"500000000849320\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Van Helsing\">Van Helsin...</div>"
+				+"        <div class=\"player_level\">Level: 227</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player42');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player42').data('current_slot', 42);
+		$('#slot43').append(
+			"<div id=\"player43\" class=\"player\" key=\"500000000755730\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"JägerBomb\">JägerBomb</div>"
+				+"        <div class=\"player_level\">Level: 36</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player43');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player43').data('current_slot', 43);
+		$('#slot44').append(
+			"<div id=\"player44\" class=\"player\" key=\"400000032707090\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Oliva\">Oliva</div>"
+				+"        <div class=\"player_level\">Level: 238</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player44');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player44').data('current_slot', 44);
+		$('#slot45').append(
+			"<div id=\"player45\" class=\"player\" key=\"500000002246530\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"B\">B</div>"
+				+"        <div class=\"player_level\">Level: 183</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player45');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player45').data('current_slot', 45);
+		$('#slot46').append(
+			"<div id=\"player46\" class=\"player\" key=\"400000024758370\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Tamara\">Tamara</div>"
+				+"        <div class=\"player_level\">Level: 250</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player46');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player46').data('current_slot', 46);
+		$('#slot47').append(
+			"<div id=\"player47\" class=\"player\" key=\"100004867113493\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"❥K\">❥K</div>"
+				+"        <div class=\"player_level\">Level: 298</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player47');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player47').data('current_slot', 47);
+		$('#slot48').append(
+			"<div id=\"player48\" class=\"player\" key=\"400000035180410\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Starlight\">Starlight</div>"
+				+"        <div class=\"player_level\">Level: 94</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player48');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player48').data('current_slot', 48);
+		$('#slot49').append(
+			"<div id=\"player49\" class=\"player\" key=\"1215694551\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Poras\">Poras</div>"
+				+"        <div class=\"player_level\">Level: 385</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player49');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player49').data('current_slot', 49);
+		$('#slot50').append(
+			"<div id=\"player50\" class=\"player\" key=\"400000016539800\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"melory\">melory</div>"
+				+"        <div class=\"player_level\">Level: 83</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player50');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player50').data('current_slot', 50);
+		$('#slot51').append(
+			"<div id=\"player51\" class=\"player\" key=\"500000002273400\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Cryptic\">Cryptic</div>"
+				+"        <div class=\"player_level\">Level: 84</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player51');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player51').data('current_slot', 51);
+		$('#slot52').append(
+			"<div id=\"player52\" class=\"player\" key=\"100007045114760\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Mr.E Mini\">Mr.E Mini</div>"
+				+"        <div class=\"player_level\">Level: 42</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player52');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player52').data('current_slot', 52);
+		$('#slot53').append(
+			"<div id=\"player53\" class=\"player\" key=\"500000000623350\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"NoMercy\">NoMercy</div>"
+				+"        <div class=\"player_level\">Level: 137</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player53');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player53').data('current_slot', 53);
+		$('#slot54').append(
+			"<div id=\"player54\" class=\"player\" key=\"500000001194590\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Fowler\">Fowler</div>"
+				+"        <div class=\"player_level\">Level: 102</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player54');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player54').data('current_slot', 54);
+		$('#slot55').append(
+			"<div id=\"player55\" class=\"player\" key=\"400000012334310\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\" Whitewall\"> Whitewall</div>"
+				+"        <div class=\"player_level\">Level: 254</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player55');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player55').data('current_slot', 55);
+		$('#slot56').append(
+			"<div id=\"player56\" class=\"player\" key=\"500000002399020\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Thadrim\">Thadrim</div>"
+				+"        <div class=\"player_level\">Level: 33</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player56');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player56').data('current_slot', 56);
+		$('#slot57').append(
+			"<div id=\"player57\" class=\"player\" key=\"400000027536220\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"GreenAriannas\">GreenArian...</div>"
+				+"        <div class=\"player_level\">Level: 68</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player57');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player57').data('current_slot', 57);
+		$('#slot58').append(
+			"<div id=\"player58\" class=\"player\" key=\"500000001415500\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Lord\">Lord</div>"
+				+"        <div class=\"player_level\">Level: 83</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player58');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player58').data('current_slot', 58);
+		$('#slot59').append(
+			"<div id=\"player59\" class=\"player\" key=\"500000000511510\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Vincent\">Vincent</div>"
+				+"        <div class=\"player_level\">Level: 276</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player59');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player59').data('current_slot', 59);
+		$('#slot60').append(
+			"<div id=\"player60\" class=\"player\" key=\"100000299712157\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Rick4yurmouth\">Rick4yurmo...</div>"
+				+"        <div class=\"player_level\">Level: 215</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player60');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player60').data('current_slot', 60);
+		$('#slot61').append(
+			"<div id=\"player61\" class=\"player\" key=\"500000002210270\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Beavis\">Beavis</div>"
+				+"        <div class=\"player_level\">Level: 135</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player61');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player61').data('current_slot', 61);
+		$('#slot62').append(
+			"<div id=\"player62\" class=\"player\" key=\"500000002113330\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Surayung\">Surayung</div>"
+				+"        <div class=\"player_level\">Level: 133</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player62');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player62').data('current_slot', 62);
+		$('#slot63').append(
+			"<div id=\"player63\" class=\"player\" key=\"500000002395130\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"iLL rhythm\">iLL rhythm</div>"
+				+"        <div class=\"player_level\">Level: 13</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player63');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player63').data('current_slot', 63);
+		$('#slot64').append(
+			"<div id=\"player64\" class=\"player\" key=\"400000026187180\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Skull Snap\">Skull Snap</div>"
+				+"        <div class=\"player_level\">Level: 317</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player64');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player64').data('current_slot', 64);
+		$('#slot65').append(
+			"<div id=\"player65\" class=\"player\" key=\"100005488694043\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Joe\">Joe</div>"
+				+"        <div class=\"player_level\">Level: 279</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player65');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player65').data('current_slot', 65);
+		$('#slot66').append(
+			"<div id=\"player66\" class=\"player\" key=\"400000026457050\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"RogueIce13\">RogueIce13</div>"
+				+"        <div class=\"player_level\">Level: 318</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player66');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player66').data('current_slot', 66);
+		$('#slot67').append(
+			"<div id=\"player67\" class=\"player\" key=\"100005559338712\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Ronin\">Ronin</div>"
+				+"        <div class=\"player_level\">Level: 276</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player67');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player67').data('current_slot', 67);
+		$('#slot68').append(
+			"<div id=\"player68\" class=\"player\" key=\"400000024802770\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Ithelion\">Ithelion</div>"
+				+"        <div class=\"player_level\">Level: 281</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player68');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player68').data('current_slot', 68);
+		$('#slot69').append(
+			"<div id=\"player69\" class=\"player\" key=\"500000002489100\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"AmVet\">AmVet</div>"
+				+"        <div class=\"player_level\">Level: 81</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player69');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player69').data('current_slot', 69);
+		$('#slot70').append(
+			"<div id=\"player70\" class=\"player\" key=\"400000005015220\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"۷oɴɢօʟɑ Ƥʀɪღօ\">۷oɴɢօʟɑ Ƥʀ...</div>"
+				+"        <div class=\"player_level\">Level: 431</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player70');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player70').data('current_slot', 70);
+		$('#slot71').append(
+			"<div id=\"player71\" class=\"player\" key=\"500000001847910\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Fieryrider\">Fieryrider</div>"
+				+"        <div class=\"player_level\">Level: 199</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player71');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player71').data('current_slot', 71);
+		$('#slot72').append(
+			"<div id=\"player72\" class=\"player\" key=\"100005849352502\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Jacob\">Jacob</div>"
+				+"        <div class=\"player_level\">Level: 124</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player72');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player72').data('current_slot', 72);
+		$('#slot73').append(
+			"<div id=\"player73\" class=\"player\" key=\"500000002244420\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"DarkShadow\">DarkShadow</div>"
+				+"        <div class=\"player_level\">Level: 37</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player73');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player73').data('current_slot', 73);
+		$('#slot74').append(
+			"<div id=\"player74\" class=\"player\" key=\"500000002007600\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"LupusXX\">LupusXX</div>"
+				+"        <div class=\"player_level\">Level: 80</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player74');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player74').data('current_slot', 74);
+		$('#slot75').append(
+			"<div id=\"player75\" class=\"player\" key=\"500000002389950\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Devin\">Devin</div>"
+				+"        <div class=\"player_level\">Level: 40</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player75');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player75').data('current_slot', 75);
+		$('#slot76').append(
+			"<div id=\"player76\" class=\"player\" key=\"400000013124140\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Charlie \">Charlie </div>"
+				+"        <div class=\"player_level\">Level: 340</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player76');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player76').data('current_slot', 76);
+		$('#slot77').append(
+			"<div id=\"player77\" class=\"player\" key=\"400000001547040\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Shortsword\">Shortsword</div>"
+				+"        <div class=\"player_level\">Level: 268</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player77');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player77').data('current_slot', 77);
+		$('#slot78').append(
+			"<div id=\"player78\" class=\"player\" key=\"500000000189700\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Shortersword\">Shorterswo...</div>"
+				+"        <div class=\"player_level\">Level: 188</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player78');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player78').data('current_slot', 78);
+		$('#slot79').append(
+			"<div id=\"player79\" class=\"player\" key=\"400000013102490\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Testius\">Testius</div>"
+				+"        <div class=\"player_level\">Level: 384</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player79');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player79').data('current_slot', 79);
+		$('#slot80').append(
+			"<div id=\"player80\" class=\"player\" key=\"500000002435450\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Athena\">Athena</div>"
+				+"        <div class=\"player_level\">Level: 101</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player80');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player80').data('current_slot', 80);
+		$('#slot81').append(
+			"<div id=\"player81\" class=\"player\" key=\"400000017879150\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Hot0_0\">Hot0_0</div>"
+				+"        <div class=\"player_level\">Level: 296</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player81');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player81').data('current_slot', 81);
+		$('#slot82').append(
+			"<div id=\"player82\" class=\"player\" key=\"100007685113838\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Juliette\">Juliette</div>"
+				+"        <div class=\"player_level\">Level: 172</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player82');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player82').data('current_slot', 82);
+		$('#slot83').append(
+			"<div id=\"player83\" class=\"player\" key=\"100005609616473\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Savvy1\">Savvy1</div>"
+				+"        <div class=\"player_level\">Level: 15</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player83');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player83').data('current_slot', 83);
+		$('#slot84').append(
+			"<div id=\"player84\" class=\"player\" key=\"500000000588120\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Remade \">Remade </div>"
+				+"        <div class=\"player_level\">Level: 90</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player84');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player84').data('current_slot', 84);
+		$('#slot85').append(
+			"<div id=\"player85\" class=\"player\" key=\"400000021893980\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"DeathGuru\">DeathGuru</div>"
+				+"        <div class=\"player_level\">Level: 85</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player85');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player85').data('current_slot', 85);
+		$('#slot86').append(
+			"<div id=\"player86\" class=\"player\" key=\"500000002561970\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Lord of the Flames\">Lord of th...</div>"
+				+"        <div class=\"player_level\">Level: 88</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player86');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player86').data('current_slot', 86);
+		$('#slot87').append(
+			"<div id=\"player87\" class=\"player\" key=\"500000001149730\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Armin\">Armin</div>"
+				+"        <div class=\"player_level\">Level: 131</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player87');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player87').data('current_slot', 87);
+		$('#slot88').append(
+			"<div id=\"player88\" class=\"player\" key=\"100008291281935\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Penella\">Penella</div>"
+				+"        <div class=\"player_level\">Level: 84</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player88');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player88').data('current_slot', 88);
+		$('#slot89').append(
+			"<div id=\"player89\" class=\"player\" key=\"500000002197220\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Gandalf\">Gandalf</div>"
+				+"        <div class=\"player_level\">Level: 24</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player89');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player89').data('current_slot', 89);
+		$('#slot90').append(
+			"<div id=\"player90\" class=\"player\" key=\"100003635394053\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Chris\">Chris</div>"
+				+"        <div class=\"player_level\">Level: 240</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player90');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player90').data('current_slot', 90);
+		$('#slot91').append(
+			"<div id=\"player91\" class=\"player\" key=\"100007595044502\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"JJ\">JJ</div>"
+				+"        <div class=\"player_level\">Level: 186</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player91');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player91').data('current_slot', 91);
+		$('#slot92').append(
+			"<div id=\"player92\" class=\"player\" key=\"500000001469700\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"Joshua {HØD}\">Joshua {HØ...</div>"
+				+"        <div class=\"player_level\">Level: 235</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player92');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player92').data('current_slot', 92);
+		$('#slot93').append(
+			"<div id=\"player93\" class=\"player\" key=\"400000001105240\">"
+				+"  <table>"
+				+"    <tr>"
+				+"      <td style=\"width: 25px;\"><img src=\"https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif\" style=\"width: 25px;\"></td>"
+				+"      <td style=\"width: 120px;\">"
+				+"        <div class=\"player_name\" title=\"😄\">😄</div>"
+				+"        <div class=\"player_level\">Level: 306</div>"
+				+"      </td>"
+				+"      <td style=\"width: 20px; text-align: right; vertical-align: top;\" onclick=\"togglePin('player93');\">"
+				+"        <div class=\"pinicon\" title=\"Pin this position.\">&nbsp;</div>"
+				+"      </td>"
+				+"    </tr>"
+				+"  </table>"
+				+"</div>"
+		);
+		$('#player93').data('current_slot', 93);
+	}
+
+	function initDraggables() {
+		$('.towerslot').addClass('unpinned');
+
+		if (!is_mobile) {
+			$('.player').draggable( {
+				containment: '#guildv2_formation_middle',
+				stack: '.player',
+				cursor: 'move',
+				revert: true
+			} );
+		}
+	}
+
+	function initLocked() {
+		bGatesLocked = true
+		$('.pinicon').attr('title', 'Locked. Click "Change" to edit.');
+		$('.towerslot').addClass('unpinned');
+		$('.player').addClass('locked');
+	}
+
+	function handlePlayerDrop(event, ui) {
+		var current_slot = ui.draggable.data('current_slot');
+
+		if (current_slot != undefined && $(this).children(':first') != null) {
+			$(this).children(':first').data('current_slot', current_slot);
+			$(this).children(':first').appendTo($('#slot'+current_slot));
+		}
+
+		current_slot = $(this).data('slot');
+		ui.draggable.data('current_slot', current_slot);
+		$(this).append(ui.draggable);
+		var offsetXPos = parseInt(ui.offset.left);
+		var offsetYPos = parseInt(ui.offset.top);
+		ui.draggable.offset({ top: offsetYPos, left: offsetXPos });
+	}
+
+	function togglePin(player_slotname)	{
+		var slot_number = $('#'+player_slotname).data('current_slot');
+
+		if ($('#slot'+slot_number).hasClass('unpinned')) {
+			if (!is_mobile) {
+				$('#slot'+slot_number).children(':first').draggable('disable');
+				$('#slot'+slot_number).droppable('option', 'disabled', true);
+			}
+
+			$('#slot'+slot_number).removeClass('unpinned');
+		} else {
+			if (!is_mobile) {
+				$('#slot'+slot_number).children(':first').draggable('enable');
+				$('#slot'+slot_number).droppable('option', 'disabled', false);
+			}
+
+			$('#slot'+slot_number).addClass('unpinned');
+		}
+	}
+
+	function toggleSelect(current_slot) {
+		if (bGatesLocked) {
+			return;
+		}
+
+		var current_slot_obj = $('#slot'+current_slot);
+
+		if (current_slot_obj.hasClass("unpinned")) {
+			if (last_selected_slot == null) {
+				last_selected_slot = current_slot;
+				current_slot_obj.addClass('hovered');
+			} else if (current_slot == last_selected_slot) {
+				last_selected_slot = null;
+				current_slot_obj.removeClass('hovered');
+			} else {
+				var last_slot_obj = $('#slot'+last_selected_slot);
+				var last_player = last_slot_obj.children(':first');
+				var current_player = current_slot_obj.children(':first');
+
+				if (last_player != null) {
+					last_player.data('current_slot', current_slot);
+					last_player.appendTo(current_slot_obj);
+				}
+
+				if (current_player != null) {
+					current_player.data('current_slot', last_selected_slot);
+					current_player.appendTo(last_slot_obj);
+				}
+
+				last_slot_obj.removeClass('hovered');
+				current_slot_obj.removeClass('hovered');
+
+				last_selected_slot = null;
+			}
+		}
+	}
+
+	function gob_send()
+	{
+		friend_browse_offset = 0;
+		reset_raid_lst();
+		stopTimers = true;
+		pageCache = {};
+
+		var sector_map_in = [];
+
+		for (var i=0; i<total_towers; i++) {
+			sector_map_in[i] = [];
+
+			for (var j=0; j<tower_size; j++) {
+				var current_slot = i * tower_size + j;
+
+				if ($('#slot'+current_slot).children().length > 0) {
+					sector_map_in[i].push($('#slot'+current_slot).children(':first').attr("key"));
+				}
+			}
+		}
+
+		var params = {
+			'ajax': 1,
+			'select_formation':1,
+			'sector_1_map_in':sector_map_in[0],
+			'sector_2_map_in':sector_map_in[1],
+			'sector_3_map_in':sector_map_in[2],
+			'sector_4_map_in':sector_map_in[3],
+					};
+
+		showLoaderIfAjax();
+
+		$.ajax({ url: 'guildv2_battle.php', context: document.body, data: params, type: 'POST', success: function(data){
+			stopTimers=false;
+			ajaxPerforming=false;
+			$('#AjaxLoadIcon').hide();
+			$('#globalContainer').html(data);
+			centerPopups();
+		}});
+
+		scrollToElement('#main_anchor');
+	}
+</script>
+
+<div id="guildv2_formation_middle">
+
+	<div class="instructions">
+		<div>YOUR CURRENT BATTLE FORMATION.</div>
+	</div>
+
+	<div>
+		<div id="tower0" class="tower"><div class="gate_label">NORTH GATE</div></div>
+		<div id="tower1" class="tower"><div class="gate_label">WEST GATE</div></div>
+		<div id="tower2" class="tower"><div class="gate_label">EAST GATE</div></div>
+		<div id="tower3" class="tower"><div class="gate_label">SOUTH GATE</div></div>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<script type="text/javascript">
+		$(initTowerSlots);
+	</script>
+
+	<script type="text/javascript">
+		$(initLocked);
+	</script>
+	<div style='clear:both;'></div>
+</div>
+
+<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_manage_caprepeatablev2.jpg'); height:24px; width:740px;"></div>
+				</td></tr></table>
+				<div style="width:740px;height:40px;"></div>
+		</div> 		
+		
+    <div id="single_popup_background" style="cursor:pointer; display:none;" class="connect_castlepb_bg" onclick="hidePositionBox();  return false;"></div>
+	
+	<div id="single_popup" class="castlepb2" style="display:none;">
+        <table cellspacing="0" cellpadding="0" >
+	        <tr>
+	            <td>
+ 			        <div style="clear:both"></div>
+				        <div id="single_popup_content"></div>	
+			        <div style="clear:both"></div>					
+	            </td>		
+	        </tr>
+        </table>
+	</div>
+						
+						
+		</div> 		<div id="persistent_layer" style="width:760px;position:absolute;top:0px;height:0px;">
+			<div style="width:545px;height:185px;position:relative;float:right;top:105px;overflow:hidden;" id="hot_swap_gen_incl_container">
+				<style type="text/css">
+.noClick {pointer-events:none;z-index:-1;}
+.haveClick {pointer-events:auto;z-index:1001;}
+</style>
+        <div id="pin_hover" style="visibility:hidden;z-index:1006;  position:absolute;width:210px;">
+    		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_top.jpg');width:210px;height:12px;">
+    		</div>
+    		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_middle.jpg');width:210px;">
+    			<div style="padding: 7px 7px 10px 10px;">
+    				<div style="width:190px;color:#ffffff;font-size:10px;text-align:center;">
+    					Click to Pin    				</div>
+    			</div>
+    		</div>
+    		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_bottom.jpg');width:210px;height:12px;">
+    		</div>
+    	</div>
+		        <div id="unpin_hover" style="visibility:hidden;z-index:1006;  position:absolute;width:210px;">
+    		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_top.jpg');width:210px;height:12px;">
+    		</div>
+    		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_middle.jpg');width:210px;">
+    			<div style="padding: 7px 7px 10px 10px;">
+    				<div style="width:190px;color:#ffffff;font-size:10px;text-align:center;">
+    					Click to Unpin    				</div>
+    			</div>
+    		</div>
+    		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/guild_class_upgrades/class_hovermenu_bottom.jpg');width:210px;height:12px;">
+    		</div>
+    	</div>
+		<div id="hot_swap_general_outer" class="noClick" style="width:476px;height:261px;position:relative;top:8px;left:-186px;overflow:hidden;">
+	<div id='recent_general_swap' style='background-image:url("https://castleagegame1-a.akamaihd.net/graphics/hot_leftexpand2.gif");width:540px;height:259px;font-weight:bold;position:relative;left:0px;display:none;'>
+		<div style="width:462px;height:252px;overflow:hidden;" id="quickSwapGeneralsSection">
+			<div style="width:100%;height:22px;">
+				<div style='float:left;width:110px;height:17px;padding-top:5px;color:#f9df66;font-size:10px;text-align:center;overflow:hidden;'>Quick Select:</div>
+				<div style="float:left;height:100%;width:210px;text-align:center;"></div>
+			</div>
+			<div style='padding:0px;'>
+				<div style='font-size:30px; text-align:center; padding-top:40px; color:white;'>
+					LOADING...
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="hot_swap_class_outer" class="noClick" style="width:59px;height:380px;position:relative;left:400px;top:-253px;overflow:hidden;">
+	<div id="hot_swap_class_div" style="width:59px;height:190px;position:relative;z-index:1001;top:98px;left:4px;display:none;">
+		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_classdropdown.gif');background-size:59px 190px;background-repeat:no-repeat;width:59px;height:190px;padding:70px 0px 0px 0px;text-align:center;">
+							<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('warrior');">
+					<img src="https://castleagegame1-a.akamaihd.net/graphics/class_warrior.gif" style="width:20px;margin:3px 0px 0px 0px;" />
+					<div style="width:100%;height:14px;overflow:hidden;color:white;font-size:6pt;">WARRIOR</div>
+				</div>
+								<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('rogue');">
+					<img src="https://castleagegame1-a.akamaihd.net/graphics/class_rogue.gif" style="width:20px;margin:3px 0px 0px 0px;" />
+					<div style="width:100%;height:14px;overflow:hidden;color:white;font-size:6pt;">ROGUE</div>
+				</div>
+								<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_changeclassbtn.gif');width:51px;height:38px;margin:0px 0px 0px 2px;cursor:pointer;" onclick="doHotSwapClass('cleric');">
+					<img src="https://castleagegame1-a.akamaihd.net/graphics/class_cleric.gif" style="width:20px;margin:3px 0px 0px 0px;" />
+					<div style="width:100%;height:14px;overflow:hidden;color:white;font-size:6pt;">CLERIC</div>
+				</div>
+						</div>
+	</div>
+</div>
+<div id="hot_swap_loadouts_div" style="width:94px;height:167px;position:relative;z-index:1001;left:445px;top:-633px;">
+		<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_rightexpand.gif');background-size:94px 167px;background-repeat:no-repeat;width:94px;height:166px;padding:2px 0px 0px 0px;text-align:center;">
+		<div style="width:66px;height:120px;margin:0px 3px 0px 24px;overflow:hidden;">
+				<div id="hot_swap_loadouts_content_div" style="position:relative;top:0px;">
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn_on.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="doHotSwapLoadout('1');">
+						Huntr					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+												<img src="https://castleagegame1-a.akamaihd.net/graphics/loadout_identifiericons_08.gif" style='height:20px;'/>
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="doHotSwapLoadout('2');">
+						GPoly					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+												<img src="https://castleagegame1-a.akamaihd.net/graphics/loadout_identifiericons_19.gif" style='height:20px;'/>
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="doHotSwapLoadout('3');">
+						GAtk					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+												<img src="https://castleagegame1-a.akamaihd.net/graphics/loadout_identifiericons_17.gif" style='height:20px;'/>
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="doHotSwapLoadout('4');">
+						Zin					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+												<img src="https://castleagegame1-a.akamaihd.net/graphics/loadout_identifiericons_06.gif" style='height:20px;'/>
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="doHotSwapLoadout('5');">
+						Def					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+												<img src="https://castleagegame1-a.akamaihd.net/graphics/loadout_identifiericons_12.gif" style='height:20px;'/>
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=6');return false;">
+						Set6					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=7');return false;">
+						Set7					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=8');return false;">
+						Set8					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=9');return false;">
+						Set9					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=10');return false;">
+						Set10					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=11');return false;">
+						Set11					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=12');return false;">
+						Set12					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=13');return false;">
+						Set13					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=14');return false;">
+						Set14					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=15');return false;">
+						Set15					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=16');return false;">
+						Set16					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=17');return false;">
+						Set17					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=18');return false;">
+						Set18					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=19');return false;">
+						Set19					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+						<div style="background-image:url('https://castleagegame1-a.akamaihd.net/graphics/hot_loadoutbtn.gif');width:66px;height:24px;">
+					<div style="float:left;width:40px;height:17px;margin:7px 0px 0px 2px;overflow:hidden;cursor:pointer;color:white;font-size:7pt;" onclick="ajaxLinkSend('globalContainer','player_loadouts.php?loadout=20');return false;">
+						Set20					</div>
+					<div style="float:left;width:22px;text-align:center;height:22px;margin:1px 0px 0px 0px;">
+											</div>
+				</div>
+					</div>
+			</div>
+		<div style="width:66px;height:20px;margin:0px 0px 0px 24px;">
+						<select name="choose_loadout" onchange="selectLoadout(this);" style="width:66px;height:14px;font-size:7pt;margin:2px 0px 1px 0px;padding:0px;border:0px;float:left;">
+								<option value="1" selected>Huntr</option>
+								<option value="2" >GPoly</option>
+								<option value="3" >GAtk</option>
+								<option value="4" >Zin</option>
+								<option value="5" >Def</option>
+								<option value="6" >Set6</option>
+								<option value="7" >Set7</option>
+								<option value="8" >Set8</option>
+								<option value="9" >Set9</option>
+								<option value="10" >Set10</option>
+								<option value="11" >Set11</option>
+								<option value="12" >Set12</option>
+								<option value="13" >Set13</option>
+								<option value="14" >Set14</option>
+								<option value="15" >Set15</option>
+								<option value="16" >Set16</option>
+								<option value="17" >Set17</option>
+								<option value="18" >Set18</option>
+								<option value="19" >Set19</option>
+								<option value="20" >Set20</option>
+							</select>
+			<script type="text/javascript">
+			var validLoadouts = {1:true,2:true,3:true,4:true,5:true};
+			function selectLoadout(sel) {
+				var i = sel.options[sel.selectedIndex].value;
+				if (validLoadouts[i]) {
+					doHotSwapLoadout(i);
+				} else {
+					ajaxLinkSend('globalContainer','player_loadouts.php?loadout='+i);
+				}
+			}
+			</script>
+					</div>
+		<div style="width:66px;height:21px;margin:0px 0px 0px 24px;text-align:center;">
+			<img id="hot_swap_loadout_scrollup" src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_class_down.jpg" style="cursor:pointer;" onclick="scrollHotSwapLoadoutsDown(122.5, -367.5);" />
+			<img id="hot_swap_loadout_scrolldown" src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_class_up.jpg" style="cursor:pointer;" onclick="scrollHotSwapLoadoutsUp(122.5);" />
+		</div>
+	</div>
+</div>
+<div style='background-image:url("https://castleagegame1-a.akamaihd.net/graphics/hot_general_container.gif");width:178px;height:167px;float:right;font-weight:bold;z-index:1002;position:relative;left:-80px;top:-800px;'>
+	<div style='color:#ffd20b; height:27px; width:178px;text-align:center; font-size:14px; overflow:hidden;'>
+		<div style='float:left; width:20px; padding: 3px 0 0 2px; cursor:pointer;' class="imgButton">
+			<img id='recent_general_swap_open' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topleft.jpg"  onclick="openRecentGenerals(false);"/>
+			<img id='recent_general_swap_close' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topright.jpg" style='display:none;' onclick="closeRecentGenerals();"/>
+		</div>
+		<div style="float:left;padding-top:5px;width:123px;white-space:nowrap;overflow:hidden;font-size:9pt;line-height:1.5;">
+		<img src='https://castleagegame1-a.akamaihd.net/graphics/genally_link_secondary.gif' style='height:18px;' /><span style='position:relative; top:-5px;'>Dolomar</span>		</div>
+		<div style='float:right;width:20px;padding:3px 0 0 0px;cursor:pointer;margin-right:7px;' class="imgButton">
+			<img id='hot_swap_loadouts_open' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topright.jpg" style="display:none;" onclick="openHotSwapLoadouts();"/>
+			<img id='hot_swap_loadouts_close' src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_topleft.jpg" onclick="closeHotSwapLoadouts();"/>
+		</div>
+	</div>
+	<div style="float:left;width:116px;">
+		<div style='padding-left:4px;'>
+			<a href="generals.php" onclick="ajaxLinkSend('globalContainer', 'generals.php'); return false;" ><div class="imgButton"><img title="click to select general" width="110" height="110" src="https://castleagegame1-a.akamaihd.net/graphics/hero_dolomar.jpg" /></div></a>		</div>
+		<div style='font-size:14px;'>
+							<div style='float:left; color:#fec182; padding: 5px 0 0 32px; width:25px; text-align:center;font-weight:normal;'> 
+					32				</div>
+				<div style='float:left; color:#b8e1fd; padding: 5px 0 0 30px; width:25px; text-align:center;font-weight:normal;'> 
+					27				</div>
+				<div style='clear:both;'></div>
+					</div>
+	</div>
+	<div style="float:left; width:60px;">
+		<div onclick="ajaxLinkSend('globalContainer','item_equip.php');return false;" style='padding: 0 0 0 5px;cursor:pointer;'>
+								<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+						<img title="Exsanguinator" alt="Exsanguinator" src="https://castleagegame1-a.akamaihd.net/graphics/eq_vincent_weapon.jpg" style="width:24px;height:24px;"/>
+					</div>
+									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+						<img title="Sword of Redemption" alt="Sword of Redemption" src="https://castleagegame1-a.akamaihd.net/graphics/demi_stamina_shield.jpg" style="width:24px;height:24px;"/>
+					</div>
+									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+						<img title="Deathrune Hellplate" alt="Deathrune Hellplate" src="https://castleagegame1-a.akamaihd.net/graphics/eq_death_epic_armor.jpg" style="width:24px;height:24px;"/>
+					</div>
+									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+						<img title="Helm of Dragon Power" alt="Helm of Dragon Power" src="https://castleagegame1-a.akamaihd.net/graphics/dragon_reward_helmet.jpg" style="width:24px;height:24px;"/>
+					</div>
+									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+						<img title="Juggernaut Medallion" alt="Juggernaut Medallion" src="https://castleagegame1-a.akamaihd.net/graphics/divinedemi_malk_amulet.jpg" style="width:24px;height:24px;"/>
+					</div>
+									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+						<img title="Aquae Vortex" alt="Aquae Vortex" src="https://castleagegame1-a.akamaihd.net/graphics/eq_water_spell.jpg" style="width:24px;height:24px;"/>
+					</div>
+									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+						<img title="Knights Bone Gauntlets" alt="Knights Bone Gauntlets" src="https://castleagegame1-a.akamaihd.net/graphics/eq_conquest_rank_2.jpg" style="width:24px;height:24px;"/>
+					</div>
+									<div style="float:left;width:26px;height:26px;overflow:hidden;padding:1px 1px 0px 0px;">
+						<img title="Rockbiter Boots" alt="Rockbiter Boots" src="https://castleagegame1-a.akamaihd.net/graphics/eq_cavern_boots.jpg" style="width:24px;height:24px;"/>
+					</div>
+									</div>
+	</div>
+	<div style="float:left;width:60px;height:28px;margin-top:2px;">
+		<img src="https://castleagegame1-a.akamaihd.net/graphics/class_mage.gif" style="float:left;width:24px;margin:2px 4px 0px 4px;" />
+		<img id="hot_swap_class_open" src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_class_down.jpg" style="margin:4px 0px 0px 0px;cursor:pointer;" onclick="openHotSwapClass();" />
+		<img id="hot_swap_class_close" src="https://castleagegame1-a.akamaihd.net/graphics/hot_arrow_class_up.jpg" style="display:none;margin:4px 0px 0px 0px;cursor:pointer;" onclick="closeHotSwapClass();" />
+	</div>
+</div>			</div>
+		</div>
+	</div> 	
+</div>
+<input type='hidden' id='current_pg_url' value="guildv2_battle.php?"/>
+<input type='hidden' id='current_pg_info' value="guildv2_battle.php?close_result=global_bottom"/>
