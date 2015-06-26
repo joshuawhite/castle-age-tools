@@ -1,5 +1,6 @@
 require 'mechanize'
 require 'yaml'
+require 'optparse'
 
 # Here I want to try using a block / yield to make the operations variant
 # One for @ALL and one for @ANY
@@ -71,7 +72,6 @@ class CaGlobal
   # This does the particular operation for every user in the yaml file
   def for_every_user
     players = YAML.load_file('player.yaml')
-    all_cookies = Hash.new 
     players.each {|player,config|
       agent = setup_agent(config)
       next if agent == nil
@@ -87,7 +87,6 @@ class CaGlobal
   # VERIFIED
   def for_one_user
     players = YAML.load_file('player.yaml')
-    all_cookies = Hash.new 
     players.each {|player,config|
       agent = setup_agent(config)
       next if agent == nil
@@ -96,6 +95,24 @@ class CaGlobal
     }
   rescue Exception => ex
     puts "Error in for_one_user. #{ex.class}, Message: #{ex.message}"
+  end
+
+  # FOR_JOSHUA_CMD
+  # This works baby
+  def for_joshua_cmd(cookie_end)
+    players = YAML.load_file('player.yaml')
+    config = players['Joshua']
+    cookie_value = "#{config['cookie_prefix']}#{cookie_end}"
+    agent = Mechanize.new
+    agent.user_agent_alias = 'Mac Safari'
+    cookie = Mechanize::Cookie.new(:domain => '.web4.castleagegame.com', 
+                                   :name => "CA_46755028429", 
+                                   :value => cookie_value, 
+                                   :path => '/')
+    agent.cookie_jar << cookie
+    yield(config, agent)
+  rescue Exception => ex
+    puts "Error in for_joshua_cmd. #{ex.class}, Message: #{ex.message}"
   end
 
 end

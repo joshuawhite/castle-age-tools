@@ -4,10 +4,12 @@ require_relative 'ca_global'
 # 1. Army adder (done, tested)
 # 2. Essence search (done, verified)
 # 3. Personal player stats (done, verified)
+# 
+# 2A. command line cookie suffix
+#
 # 4. Guild member list (done, non-integrated)
 # 5. Enemy guild recorder
 # 6. Our guild recorder
-# 
 # 7. Guild database
 #  - Guild: name, members
 #  - Player: name, level, class, tower, position
@@ -92,16 +94,16 @@ class Main < CaGlobal
         guilds.each {|guild|
           page = agent.post(GUILD_URL, {'guild_id' => guild, 'ajax' => '1', 'ajax' => '1'})
           essence = page.parser.xpath("//span[@style='color:#ec8900;']")
-          atks = essence[0].text.split("/")
-          if (atks.length == 2 and atks[0].to_i + 200 <= atks[1].to_i)
-            avail_atk = atks[1].to_i - atks[0].to_i
-            puts "#{avail_atk} atk available:\n#{ESSENCE_URL}=#{guild}"
-          end
-          defs = essence[1].text.split("/")
-          if (defs.length == 2 and defs[0].to_i + 200 <= defs[1].to_i)
-            avail_def = defs[1].to_i - defs[0].to_i
-            puts "#{avail_def} def available:\n#{ESSENCE_URL}=#{guild}"
-          end
+          #atks = essence[0].text.split("/")
+          #if (atks.length == 2 and atks[0].to_i + 200 <= atks[1].to_i)
+          #  avail_atk = atks[1].to_i - atks[0].to_i
+          #  puts "#{avail_atk} atk available:\n#{ESSENCE_URL}=#{guild}"
+          #end
+          #defs = essence[1].text.split("/")
+          #if (defs.length == 2 and defs[0].to_i + 200 <= defs[1].to_i)
+          #  avail_def = defs[1].to_i - defs[0].to_i
+          #  puts "#{avail_def} def available:\n#{ESSENCE_URL}=#{guild}"
+          #end
           dmgs = essence[2].text.split("/")
           if (dmgs.length == 2 and dmgs[0].to_i + 200 <= dmgs[1].to_i)
             avail_dmg = dmgs[1].to_i - dmgs[0].to_i
